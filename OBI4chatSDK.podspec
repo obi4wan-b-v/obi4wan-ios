@@ -27,7 +27,7 @@ Pod::Spec.new do |s|
   
   s.source       = { :git => "https://github.com/obi4wan-b-v/obi4wan-ios.git", :tag => "#{s.version}" }
 
-  s.ios.vendored_frameworks = 'Framework/OBI4chatSDK.framework'
+  s.ios.vendored_frameworks = 'OBI4chatSDK.framework'
 
   s.ios.deployment_target = '12.1'
 
