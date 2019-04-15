@@ -205,6 +205,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK12ClientTyping")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class OBIMessage;
 
 SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @interface OBI4Chat : NSObject
@@ -212,9 +213,17 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 - (void)initPusher SWIFT_METHOD_FAMILY(none);
 - (void)isChatAvailabile:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
 - (void)openChat;
+- (void)sendMessageWithMessage:(OBIMessage * _Nonnull)message shouldSave:(BOOL)shouldSave;
 - (void)sendTypingWithTyping:(ClientTyping * _Nonnull)typing;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol OBI4ChatObserver;
+
+@interface OBI4Chat (SWIFT_EXTENSION(OBI4chatSDK))
+- (void)addObserver:(id <OBI4ChatObserver> _Nonnull)observer;
+- (void)removeObserver:(id <OBI4ChatObserver> _Nonnull)observer;
 @end
 
 
@@ -222,6 +231,34 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 
 
 
+SWIFT_PROTOCOL("_TtP11OBI4chatSDK16OBI4ChatObserver_")
+@protocol OBI4ChatObserver
+- (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveNewMessage:(OBIMessage * _Nonnull)message;
+- (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveTyping:(ClientTyping * _Nonnull)typing;
+- (void)obi4ChatInited:(OBI4Chat * _Nonnull)player;
+- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)player;
+@end
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK13OBIAttachment")
+@interface OBIAttachment : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK9OBIAuthor")
+@interface OBIAuthor : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
+@interface OBIMessage : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
@@ -444,6 +481,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK12ClientTyping")
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
 
+@class OBIMessage;
 
 SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @interface OBI4Chat : NSObject
@@ -451,9 +489,17 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 - (void)initPusher SWIFT_METHOD_FAMILY(none);
 - (void)isChatAvailabile:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
 - (void)openChat;
+- (void)sendMessageWithMessage:(OBIMessage * _Nonnull)message shouldSave:(BOOL)shouldSave;
 - (void)sendTypingWithTyping:(ClientTyping * _Nonnull)typing;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+@protocol OBI4ChatObserver;
+
+@interface OBI4Chat (SWIFT_EXTENSION(OBI4chatSDK))
+- (void)addObserver:(id <OBI4ChatObserver> _Nonnull)observer;
+- (void)removeObserver:(id <OBI4ChatObserver> _Nonnull)observer;
 @end
 
 
@@ -461,6 +507,34 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 
 
 
+SWIFT_PROTOCOL("_TtP11OBI4chatSDK16OBI4ChatObserver_")
+@protocol OBI4ChatObserver
+- (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveNewMessage:(OBIMessage * _Nonnull)message;
+- (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveTyping:(ClientTyping * _Nonnull)typing;
+- (void)obi4ChatInited:(OBI4Chat * _Nonnull)player;
+- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)player;
+@end
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK13OBIAttachment")
+@interface OBIAttachment : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK9OBIAuthor")
+@interface OBIAuthor : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
+@interface OBIMessage : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 
