@@ -199,6 +199,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK16ChatAvailability")
 @end
 
 
+/// Class for the typing indication model
 SWIFT_CLASS("_TtC11OBI4chatSDK12ClientTyping")
 @interface ClientTyping : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -207,13 +208,30 @@ SWIFT_CLASS("_TtC11OBI4chatSDK12ClientTyping")
 
 @class OBIMessage;
 
+/// Main class for  the chat. This is the public interface for sending, receiving messages and for settin up the chat
 SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @interface OBI4Chat : NSObject
+/// Initialzation function for the SDK
+/// \param guid ID of the chat used to configure the chat.
+///
+/// \param enableLauncher Boolean which determins if the default button is shown or not
+///
 - (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid enableLauncher:(BOOL)enableLauncher OBJC_DESIGNATED_INITIALIZER;
-- (void)initPusher SWIFT_METHOD_FAMILY(none);
+/// Maiking an newtwork request to check if the chat is avalabile or not.
+/// \param completion is called after the response of the server. It notifies if the chat is avalabile.
+///
 - (void)isChatAvailabile:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
+/// On calling ths function chat window will be shown.
 - (void)openChat;
+/// Sending message to agent.
+/// \param message message to send
+///
+/// \param shouldSave should the message be saved in the local base
+///
 - (void)sendMessageWithMessage:(OBIMessage * _Nonnull)message shouldSave:(BOOL)shouldSave;
+/// Sending event that idicates if the user is typing or not.
+/// \param typing model that indicates if the user is typing or not
+///
 - (void)sendTypingWithTyping:(ClientTyping * _Nonnull)typing;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -222,7 +240,13 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @protocol OBI4ChatObserver;
 
 @interface OBI4Chat (SWIFT_EXTENSION(OBI4chatSDK))
+/// Function for adding new chat observer
+/// \param observer object that is the observer
+///
 - (void)addObserver:(id <OBI4ChatObserver> _Nonnull)observer;
+/// Dunction for removing a chat observer
+/// \param observer observer: object that is the observer
+///
 - (void)removeObserver:(id <OBI4ChatObserver> _Nonnull)observer;
 @end
 
@@ -231,15 +255,33 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 
 
 
+/// Protocol that should be implemented to get obesrvations when the new message or typing event are received, when chat is inited and when submit is performed.
 SWIFT_PROTOCOL("_TtP11OBI4chatSDK16OBI4ChatObserver_")
 @protocol OBI4ChatObserver
+/// Function that is called when new message is received.
+/// \param chat inscance of chat
+///
+/// \param message received message
+///
 - (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveNewMessage:(OBIMessage * _Nonnull)message;
+/// Function that is called when typing event is received.
+/// \param chat inscance of chat
+///
+/// \param typing received typing event model
+///
 - (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveTyping:(ClientTyping * _Nonnull)typing;
-- (void)obi4ChatInited:(OBI4Chat * _Nonnull)player;
-- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)player;
+/// Function called when the chat is inited.
+/// \param chat inscance of chat
+///
+- (void)obi4ChatInited:(OBI4Chat * _Nonnull)chat;
+/// Function called when form is submited.
+/// \param chat inscance of chat
+///
+- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)chat;
 @end
 
 
+/// class for message attachment model
 SWIFT_CLASS("_TtC11OBI4chatSDK13OBIAttachment")
 @interface OBIAttachment : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -247,6 +289,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK13OBIAttachment")
 @end
 
 
+/// Class for author of the message model
 SWIFT_CLASS("_TtC11OBI4chatSDK9OBIAuthor")
 @interface OBIAuthor : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -254,6 +297,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK9OBIAuthor")
 @end
 
 
+/// Class for the message model
 SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
 @interface OBIMessage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -475,6 +519,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK16ChatAvailability")
 @end
 
 
+/// Class for the typing indication model
 SWIFT_CLASS("_TtC11OBI4chatSDK12ClientTyping")
 @interface ClientTyping : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -483,13 +528,30 @@ SWIFT_CLASS("_TtC11OBI4chatSDK12ClientTyping")
 
 @class OBIMessage;
 
+/// Main class for  the chat. This is the public interface for sending, receiving messages and for settin up the chat
 SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @interface OBI4Chat : NSObject
+/// Initialzation function for the SDK
+/// \param guid ID of the chat used to configure the chat.
+///
+/// \param enableLauncher Boolean which determins if the default button is shown or not
+///
 - (nonnull instancetype)initWithGuid:(NSString * _Nonnull)guid enableLauncher:(BOOL)enableLauncher OBJC_DESIGNATED_INITIALIZER;
-- (void)initPusher SWIFT_METHOD_FAMILY(none);
+/// Maiking an newtwork request to check if the chat is avalabile or not.
+/// \param completion is called after the response of the server. It notifies if the chat is avalabile.
+///
 - (void)isChatAvailabile:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
+/// On calling ths function chat window will be shown.
 - (void)openChat;
+/// Sending message to agent.
+/// \param message message to send
+///
+/// \param shouldSave should the message be saved in the local base
+///
 - (void)sendMessageWithMessage:(OBIMessage * _Nonnull)message shouldSave:(BOOL)shouldSave;
+/// Sending event that idicates if the user is typing or not.
+/// \param typing model that indicates if the user is typing or not
+///
 - (void)sendTypingWithTyping:(ClientTyping * _Nonnull)typing;
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
@@ -498,7 +560,13 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @protocol OBI4ChatObserver;
 
 @interface OBI4Chat (SWIFT_EXTENSION(OBI4chatSDK))
+/// Function for adding new chat observer
+/// \param observer object that is the observer
+///
 - (void)addObserver:(id <OBI4ChatObserver> _Nonnull)observer;
+/// Dunction for removing a chat observer
+/// \param observer observer: object that is the observer
+///
 - (void)removeObserver:(id <OBI4ChatObserver> _Nonnull)observer;
 @end
 
@@ -507,15 +575,33 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 
 
 
+/// Protocol that should be implemented to get obesrvations when the new message or typing event are received, when chat is inited and when submit is performed.
 SWIFT_PROTOCOL("_TtP11OBI4chatSDK16OBI4ChatObserver_")
 @protocol OBI4ChatObserver
+/// Function that is called when new message is received.
+/// \param chat inscance of chat
+///
+/// \param message received message
+///
 - (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveNewMessage:(OBIMessage * _Nonnull)message;
+/// Function that is called when typing event is received.
+/// \param chat inscance of chat
+///
+/// \param typing received typing event model
+///
 - (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveTyping:(ClientTyping * _Nonnull)typing;
-- (void)obi4ChatInited:(OBI4Chat * _Nonnull)player;
-- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)player;
+/// Function called when the chat is inited.
+/// \param chat inscance of chat
+///
+- (void)obi4ChatInited:(OBI4Chat * _Nonnull)chat;
+/// Function called when form is submited.
+/// \param chat inscance of chat
+///
+- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)chat;
 @end
 
 
+/// class for message attachment model
 SWIFT_CLASS("_TtC11OBI4chatSDK13OBIAttachment")
 @interface OBIAttachment : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -523,6 +609,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK13OBIAttachment")
 @end
 
 
+/// Class for author of the message model
 SWIFT_CLASS("_TtC11OBI4chatSDK9OBIAuthor")
 @interface OBIAuthor : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
@@ -530,6 +617,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK9OBIAuthor")
 @end
 
 
+/// Class for the message model
 SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
 @interface OBIMessage : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
