@@ -188,12 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 
 
-SWIFT_CLASS("_TtC11OBI4chatSDK9AlertUtil")
-@interface AlertUtil : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
-
-
 SWIFT_CLASS("_TtC11OBI4chatSDK16ChatAvailability")
 @interface ChatAvailability : NSObject
 @end
@@ -506,12 +500,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="OBI4chatSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
-
-
-SWIFT_CLASS("_TtC11OBI4chatSDK9AlertUtil")
-@interface AlertUtil : NSObject
-- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
-@end
 
 
 SWIFT_CLASS("_TtC11OBI4chatSDK16ChatAvailability")
