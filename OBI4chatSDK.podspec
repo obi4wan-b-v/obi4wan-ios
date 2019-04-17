@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "0.8.1"
+  s.version       = "0.8.2"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.dependency  'PusherSwift'
+  s.dependency  'PusherSwift', '~> 5.1.1'
 
   s.swift_version = "4.2"
 
