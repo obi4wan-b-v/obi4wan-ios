@@ -31,7 +31,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '10.0'
 
-  s.dependency  'PusherSwift'
+  s.dependency  'PusherSwift', '7.0'
 
   s.swift_version = "4.2"
 
