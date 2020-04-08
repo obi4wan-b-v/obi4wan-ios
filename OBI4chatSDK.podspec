@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "0.8.5"
+  s.version       = "1.0.0"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
 
-  s.platform     = :ios, "10.0"
+  s.platform     = :ios, "12.1"
   
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
 
   s.ios.vendored_frameworks = 'OBI4chatSDK.framework'
 
-  s.ios.deployment_target = '10.0'
+  s.ios.deployment_target = '12.1'
 
   s.dependency  'PusherSwift', '7.0'
 
