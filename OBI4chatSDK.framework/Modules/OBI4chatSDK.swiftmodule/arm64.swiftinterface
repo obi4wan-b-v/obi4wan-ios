@@ -92,7 +92,7 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
 @objc public class OBI4Chat : ObjectiveC.NSObject {
   @objc public init(appGuid: Swift.String, userGuid: Swift.String? = nil, botId: Swift.String? = nil, enableLauncher: Swift.Bool, externalConfiguration: OBI4chatSDK.ExternalChatConfigurationModel? = nil, externalStyle: OBI4chatSDK.ExternalStyle? = nil)
   @objc public func isChatAvailabile(_ completion: @escaping (OBI4chatSDK.ChatAvailability) -> Swift.Void)
-  @objc public func openChat()
+  @objc public func openChat(in viewController: UIKit.UIViewController? = nil)
   @objc public func startBotSessionIfNeeded()
   @objc public func getCurrentUserGuid() -> Swift.String
   @objc public func getCurrentBotId() -> Swift.String

@@ -246,6 +246,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK9FontStyle")
 @end
 
 
+@class UIViewController;
 @class OBIMessage;
 
 /// Main class for  the chat. This is the public interface for sending, receiving messages and for settin up the chat
@@ -270,7 +271,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 ///
 - (void)isChatAvailabile:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
 /// On calling ths function chat window will be shown.
-- (void)openChat;
+- (void)openChatIn:(UIViewController * _Nullable)viewController;
 /// On calling ths function bot session will be started.
 - (void)startBotSessionIfNeeded;
 /// Get current user GUID
@@ -361,6 +362,8 @@ SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
