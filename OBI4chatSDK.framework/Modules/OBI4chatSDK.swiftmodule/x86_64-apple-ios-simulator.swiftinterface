@@ -12,12 +12,12 @@ import PusherSwift
 import Swift
 import UIKit
 @objc public class OBIMessage : ObjectiveC.NSObject, Swift.Codable {
-  final public let content: Swift.String
+  final public let content: Swift.String?
   final public let type: Swift.String
   final public let author: OBI4chatSDK.OBIAuthor?
   final public let attachment: OBI4chatSDK.OBIAttachment?
   public var date: Swift.String
-  public init(content: Swift.String, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String)
+  public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String)
   @objc deinit
   @objc override dynamic public init()
   required public init(from decoder: Swift.Decoder) throws
