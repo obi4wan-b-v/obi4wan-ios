@@ -257,6 +257,8 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 ///
 /// \param userGuid ID of the user used to configure the chat.
 ///
+/// \param userName Name of the user that sends messages.
+///
 /// \param botGuid ID of the user used to configure the chat.
 ///
 /// \param enableLauncher Boolean which determins if the default button is shown or not
@@ -265,7 +267,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 ///
 /// \param externalStyle Can be used to override style like fonts and colors
 ///
-- (nonnull instancetype)initWithAppGuid:(NSString * _Nonnull)appGuid userGuid:(NSString * _Nullable)userGuid botId:(NSString * _Nullable)botId enableLauncher:(BOOL)enableLauncher externalConfiguration:(ExternalChatConfigurationModel * _Nullable)externalConfiguration externalStyle:(ExternalStyle * _Nullable)externalStyle OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithAppGuid:(NSString * _Nonnull)appGuid userGuid:(NSString * _Nullable)userGuid userName:(NSString * _Nullable)userName botId:(NSString * _Nullable)botId enableLauncher:(BOOL)enableLauncher externalConfiguration:(ExternalChatConfigurationModel * _Nullable)externalConfiguration externalStyle:(ExternalStyle * _Nullable)externalStyle OBJC_DESIGNATED_INITIALIZER;
 /// Maiking an newtwork request to check if the chat is avalabile or not.
 /// \param completion is called after the response of the server. It notifies if the chat is avalabile.
 ///
