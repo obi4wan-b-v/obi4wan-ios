@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "2.1.3"
+  s.version       = "0.0.1"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
@@ -31,13 +31,9 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '12.1'
 
-  s.dependency  'PusherSwift', '7.0'
+  s.dependency  'PusherSwift', '8.0'
 
   s.swift_version = "4.2"
-
-  s.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
-
-  s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
 
