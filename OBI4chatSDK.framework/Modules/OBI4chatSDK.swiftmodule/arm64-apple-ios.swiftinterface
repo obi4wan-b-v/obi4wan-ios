@@ -27,6 +27,7 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   case agent
   case user
   case typing
+  case waiting
   case bot
   public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
@@ -98,6 +99,7 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   @objc public func getCurrentBotId() -> Swift.String
   @objc public func deleteChatHistory()
   @objc public func restartChat(userGuid: Swift.String? = nil, botId: Swift.String? = nil)
+  @objc public func closeChatSession()
   @objc public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool)
   @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
   @objc deinit
@@ -142,6 +144,7 @@ extension URLRequest {
   public var inputTextFieldPlaceholder: Swift.String?
   public var headerTitle: OBI4chatSDK.FontStyle?
   public var headerSubtitle: OBI4chatSDK.FontStyle?
+  public var headerTextColor: UIKit.UIColor?
   public var formSentTitle: Swift.String?
   public var formSentSubtitle: Swift.String?
   @objc deinit
