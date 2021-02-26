@@ -286,8 +286,6 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 /// \param userGuid message to send
 ///
 - (void)restartChatWithUserGuid:(NSString * _Nullable)userGuid botId:(NSString * _Nullable)botId;
-/// Close chat session
-- (void)closeChatSession;
 /// Sending message to agent.
 /// \param message message to send
 ///
