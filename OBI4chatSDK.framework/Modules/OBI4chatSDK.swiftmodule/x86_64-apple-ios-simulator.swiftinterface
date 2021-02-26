@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
 // swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4chatSDK
+// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name OBI4chatSDK
 import AVKit
 import CoreData
 import Foundation
@@ -85,9 +85,9 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   final public let name: Swift.String
   public var guid: Swift.String?
   public init(url: Swift.String, name: Swift.String, guid: Swift.String)
+  @objc deinit
   @objc override dynamic public init()
   required public init(from decoder: Swift.Decoder) throws
-  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
 @objc public class OBI4Chat : ObjectiveC.NSObject {
@@ -163,6 +163,3 @@ extension URLRequest {
   @objc deinit
   @objc override dynamic public init()
 }
-extension OBI4chatSDK.OBIMessageType : Swift.Equatable {}
-extension OBI4chatSDK.OBIMessageType : Swift.Hashable {}
-extension OBI4chatSDK.OBIMessageType : Swift.RawRepresentable {}
