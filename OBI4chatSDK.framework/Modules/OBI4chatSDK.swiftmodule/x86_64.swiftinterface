@@ -85,9 +85,9 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   final public let name: Swift.String
   public var guid: Swift.String?
   public init(url: Swift.String, name: Swift.String, guid: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
   required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
 @objc public class OBI4Chat : ObjectiveC.NSObject {
