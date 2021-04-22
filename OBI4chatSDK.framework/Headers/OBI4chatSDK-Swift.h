@@ -188,7 +188,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
+@import CoreGraphics;
+@import Foundation;
 @import ObjectiveC;
+@import UIKit;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -205,6 +208,28 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 # pragma clang attribute push(__attribute__((external_source_symbol(language="Swift", defined_in="OBI4chatSDK",generated_declaration))), apply_to=any(function,enum,objc_interface,objc_category,objc_protocol))
 # pragma pop_macro("any")
 #endif
+
+
+SWIFT_CLASS("_TtC11OBI4chatSDK9AlertUtil")
+@interface AlertUtil : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSCoder;
+@class UICollectionViewLayoutAttributes;
+
+/// A <code>UICollectionViewFlowLayout</code> subclass that gives you control
+/// over the horizontal and vertical alignment of the cells.
+/// You can use it to align the cells like words in a left- or right-aligned text
+/// and you can specify how the cells are vertically aligned in their row.
+SWIFT_CLASS("_TtC11OBI4chatSDK31AlignedCollectionViewFlowLayout")
+@interface AlignedCollectionViewFlowLayout : UICollectionViewFlowLayout
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
+- (UICollectionViewLayoutAttributes * _Nullable)layoutAttributesForItemAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (NSArray<UICollectionViewLayoutAttributes *> * _Nullable)layoutAttributesForElementsInRect:(CGRect)rect SWIFT_WARN_UNUSED_RESULT;
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
 
 
 SWIFT_CLASS("_TtC11OBI4chatSDK12BalloonStyle")
@@ -246,13 +271,20 @@ SWIFT_CLASS("_TtC11OBI4chatSDK9FontStyle")
 @end
 
 
+
+SWIFT_CLASS("_TtC11OBI4chatSDK14NetworkManager")
+@interface NetworkManager : NSObject
+- (nonnull instancetype)init SWIFT_UNAVAILABLE;
++ (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
+@end
+
 @class UIViewController;
 @class OBIMessage;
 
-/// Main class for  the chat. This is the public interface for sending, receiving messages and for settin up the chat
+/// Main class for  the chat. This is the public interface for sending, receiving messages and for setting up the chat
 SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 @interface OBI4Chat : NSObject
-/// Initialzation function for the SDK
+/// Initialisation function for the SDK
 /// \param appGuid ID of the application used to configure the chat.
 ///
 /// \param userGuid ID of the user used to configure the chat.
@@ -261,20 +293,20 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 ///
 /// \param botGuid ID of the user used to configure the chat.
 ///
-/// \param enableLauncher Boolean which determins if the default button is shown or not
+/// \param enableLauncher Boolean which determines if the default button is shown or not
 ///
 /// \param externalConfiguration Can be used to override configuration from API
 ///
 /// \param externalStyle Can be used to override style like fonts and colors
 ///
 - (nonnull instancetype)initWithAppGuid:(NSString * _Nonnull)appGuid userGuid:(NSString * _Nullable)userGuid userName:(NSString * _Nullable)userName botId:(NSString * _Nullable)botId enableLauncher:(BOOL)enableLauncher externalConfiguration:(ExternalChatConfigurationModel * _Nullable)externalConfiguration externalStyle:(ExternalStyle * _Nullable)externalStyle OBJC_DESIGNATED_INITIALIZER;
-/// Maiking an newtwork request to check if the chat is avalabile or not.
-/// \param completion is called after the response of the server. It notifies if the chat is avalabile.
+/// Making a network request to check if the chat is available or not.
+/// \param completion is called after the response of the server. It notifies if the chat is available.
 ///
-- (void)isChatAvailabile:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
-/// On calling ths function chat window will be shown.
+- (void)isChatAvailable:(void (^ _Nonnull)(ChatAvailability * _Nonnull))completion;
+/// On calling this function chat window will be shown.
 - (void)openChatIn:(UIViewController * _Nullable)viewController;
-/// On calling ths function bot session will be started.
+/// On calling this function bot session will be started.
 - (void)startBotSessionIfNeeded;
 /// Get current user GUID
 - (NSString * _Nonnull)getCurrentUserGuid SWIFT_WARN_UNUSED_RESULT;
@@ -294,7 +326,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 /// \param shouldSave should the message be saved in the local base
 ///
 - (void)sendMessageWithMessage:(OBIMessage * _Nonnull)message shouldSave:(BOOL)shouldSave;
-/// Sending event that idicates if the user is typing or not.
+/// Sending event that indicates if the user is typing or not.
 /// \param typing model that indicates if the user is typing or not
 ///
 - (void)sendTypingWithTyping:(ClientTyping * _Nonnull)typing;
@@ -309,7 +341,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 /// \param observer object that is the observer
 ///
 - (void)addObserver:(id <OBI4ChatObserver> _Nonnull)observer;
-/// Dunction for removing a chat observer
+/// Function for removing a chat observer
 /// \param observer observer: object that is the observer
 ///
 - (void)removeObserver:(id <OBI4ChatObserver> _Nonnull)observer;
@@ -318,29 +350,29 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 
 
 
-/// Protocol that should be implemented to get obesrvations when the new message or typing event are received, when chat is inited and when submit is performed.
+/// Protocol that should be implemented to get observations when the new message or typing event are received, when chat is inited and when submit is performed.
 SWIFT_PROTOCOL("_TtP11OBI4chatSDK16OBI4ChatObserver_")
 @protocol OBI4ChatObserver
 /// Function that is called when new message is received.
-/// \param chat inscance of chat
+/// \param chat instance of chat
 ///
 /// \param message received message
 ///
 - (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveNewMessage:(OBIMessage * _Nonnull)message;
 /// Function that is called when typing event is received.
-/// \param chat inscance of chat
+/// \param chat instance of chat
 ///
 /// \param typing received typing event model
 ///
 - (void)obi4Chat:(OBI4Chat * _Nonnull)chat didReceiveTyping:(ClientTyping * _Nonnull)typing;
 /// Function called when the chat is inited.
-/// \param chat inscance of chat
+/// \param chat instance of chat
 ///
 - (void)obi4ChatInited:(OBI4Chat * _Nonnull)chat;
-/// Function called when form is submited.
-/// \param chat inscance of chat
+/// Function called when form is submmited.
+/// \param chat instance of chat
 ///
-- (void)obi4ChatPreformSubmited:(OBI4Chat * _Nonnull)chat;
+- (void)obi4ChatPreformSubmitted:(OBI4Chat * _Nonnull)chat;
 @end
 
 
@@ -366,6 +398,8 @@ SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
 @end
+
+
 
 
 
