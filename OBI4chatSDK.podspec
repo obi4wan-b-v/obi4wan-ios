@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "3.0.2"
+  s.version       = "3.0.3"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
@@ -24,14 +24,14 @@ Pod::Spec.new do |s|
     }
     
   s.author        = { "OBI4wan" => "info@obi4wan.nl" }
-  
-  s.source       = { :git => "https://github.com/obi4wan-b-v/obi4wan-ios.git", :tag => "#{s.version}" }
+  s.source        = { :git => '' }
+  #s.source       = { :git => "https://github.com/obi4wan-b-v/obi4wan-ios.git", :tag => "#{s.version}" }
 
-  s.ios.vendored_frameworks = 'OBI4chatSDK.framework'
+  s.ios.vendored_frameworks = 'OBI4chatSDK.xcframework'
 
   s.ios.deployment_target = '12.1'
 
-  s.dependency  'PusherSwift', '7.0'
+  s.dependency  'PusherSwift'
   s.dependency  'lottie-ios'
   s.dependency  'Alamofire'
   s.dependency  'ReachabilitySwift'
