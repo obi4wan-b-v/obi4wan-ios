@@ -3,7 +3,7 @@
 
 ## Installation
 
-OBI4wan chat SDK for iOS supports iOS 12 & 13. 
+OBI4wan chat SDK for iOS supports iOS 13. 
 
 ### CocoaPods
 Add the OBI4chatSDK pod into your Podfile and run `pod install`.
@@ -29,7 +29,7 @@ OBI4Chat(guid: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx",
         userGuid: String? = nil, 
         externalConfiguration: ExternalChatConfigurationModel? = nil)
 ```
-- The ```guid``` is the unique identifer for your chat, the ```enableLauncher``` parameter defines if the default button for opening chat is shown, with ```userGuid``` parameter it is possible to set custom user id and with ```externalConfiguration``` parameter configuration fetched from API can be overriden.
+- The ```guid``` is the unique identifier for your chat, the ```enableLauncher``` parameter defines if the default button for opening chat is shown, with ```userGuid``` parameter it is possible to set custom user id and with ```externalConfiguration``` parameter configuration fetched from API can be overriden.
 
 External configuration object is shown below.
 
@@ -85,7 +85,7 @@ func obi4Chat(_ chat: OBI4Chat, didReceiveTyping typing: ClientTyping)
 ```swift 
 func obi4ChatInited(_ chat: OBI4Chat)
 ``` 
-- Function called when form is submited.
+- Function called when form is submmited.
 
 ```swift 
 func obi4ChatPreformSubmited(_ chat: OBI4Chat)
@@ -100,7 +100,7 @@ and for typing this function is used:
 ```swift 
 func sendTyping(typing: ClientTyping)
 ``` 
- ```OBIMessage``` is the send/received message type. This is a model class and has the folowing stucutre: 
+ ```OBIMessage``` is the send/received message type. This is a model class and has the folowing structure: 
 
 ```swift 
 class OBIMessage: NSObject, Codable {
@@ -111,7 +111,7 @@ class OBIMessage: NSObject, Codable {
     public let date: String
 }
 ``` 
-- content is the textual message, type is a string that can be ```outgoing``` or ```incoming```, date is the current date and time.  Author and attachemnt are objects, author is object of type ```OBIAuthor```  and this object has the next strucutre:
+- content is the textual message, type is a string that can be ```outgoing``` or ```incoming```, date is the current date and time.  Author and attachment are objects, author is object of type ```OBIAuthor```  and this object has the next structure:
 
 ```swift 
 class OBIAuthor: NSObject, Codable {
@@ -120,7 +120,7 @@ class OBIAuthor: NSObject, Codable {
 }
 ``` 
 - url is the url of the avatar image of the author and it is optional, and the name is the name of the author.  
-- Attachement is object of type ```OBIAuthor``` and this object has the next structure:
+- Attachment is object of type ```OBIAuthor``` and this object has the next structure:
 
 ```swift 
 class OBIAttachment: NSObject, Codable {
@@ -131,7 +131,7 @@ class OBIAttachment: NSObject, Codable {
 ``` 
 - url is the url where the attachment is stored, type is ```nil``` if attachment is image and ```application/pdf``` if attachment is PDF document and the name is the name of the attachment. 
 
-```ClientTyping``` is the type of message when typing event is  sent/received . This is a model class and has the folowing stucutre: 
+```ClientTyping``` is the type of message when typing event is sent/received . This is a model class and has the folowing structure: 
 
 ```swift 
 class ClientTyping: NSObject, Codable {
@@ -150,11 +150,11 @@ func addObserver(_ observer: OBI4ChatObserver)
 ```swift 
 func removeObserver(_ observer: OBI4ChatObserver)
 ``` 
-To check if the chat is avaliable or not user can call this function:
+To check if the chat is available or not user can call this function:
 ```swift 
 func isChatAvailabile(_ completion: @escaping (OBI4chatSDK.ChatAvailability) -> Void)
 ``` 
-- on completion of user gets a response if the chat is avaliable or not. Strucutre of the response is:
+- on completion of user gets a response if the chat is available or not. Structure of the response is:
 ```swift 
 class ChatAvailability : NSObject, Codable {
     public let available: Bool

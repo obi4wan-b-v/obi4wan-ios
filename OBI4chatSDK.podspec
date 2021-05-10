@@ -1,12 +1,12 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "3.0.3"
+  s.version       = "3.0.4"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
 
-  s.platform     = :ios, "12.1"
+  s.platform     = :ios, "13"
   
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
       Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,12 +24,11 @@ Pod::Spec.new do |s|
     }
     
   s.author        = { "OBI4wan" => "info@obi4wan.nl" }
-  s.source        = { :git => '' }
-  #s.source       = { :git => "https://github.com/obi4wan-b-v/obi4wan-ios.git", :tag => "#{s.version}" }
+  s.source       = { :git => "https://github.com/obi4wan-b-v/obi4wan-ios.git", :tag => "#{s.version}" }
 
   s.ios.vendored_frameworks = 'OBI4chatSDK.xcframework'
 
-  s.ios.deployment_target = '12.1'
+  s.ios.deployment_target = '13'
 
   s.dependency  'PusherSwift'
   s.dependency  'lottie-ios'

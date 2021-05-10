@@ -20,6 +20,7 @@ import UIKit
   final public let attachment: OBI4chatSDK.OBIAttachment?
   public var date: Swift.String
   public var choices: [Swift.String]?
+  public var link: Swift.String?
   public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [Swift.String] = [])
   @objc override dynamic public init()
   @objc deinit
@@ -143,8 +144,10 @@ precedencegroup NullabilityPrecedence {
   higherThan: AssignmentPrecedence
 }
 infix operator ?= : NullabilityPrecedence
-@_hasMissingDesignatedInitializers public class CodableStudio {
-  public static let name: Swift.String
+@_inheritsConvenienceInitializers @objc(ClientMessage) public class ClientMessage : CoreData.NSManagedObject, Swift.Codable {
+  required convenience public init(from decoder: Swift.Decoder) throws
+  public func encode(to encoder: Swift.Encoder) throws
+  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
   @objc deinit
 }
 extension URLRequest {
