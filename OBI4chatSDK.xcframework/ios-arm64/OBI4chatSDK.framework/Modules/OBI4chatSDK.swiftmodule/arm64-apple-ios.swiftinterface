@@ -220,6 +220,9 @@ public enum VerticalAlignment {
   @objc override dynamic public init()
   @objc deinit
 }
+extension NSAttributedString {
+  public func trimWhiteSpace() -> Foundation.NSAttributedString
+}
 extension OBI4chatSDK.OBIMessageType : Swift.Equatable {}
 extension OBI4chatSDK.OBIMessageType : Swift.Hashable {}
 extension OBI4chatSDK.OBIMessageType : Swift.RawRepresentable {}

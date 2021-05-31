@@ -249,6 +249,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK16ChatAvailability")
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
+/// Message wrapper model
 SWIFT_CLASS_NAMED("ClientMessage")
 @interface ClientMessage : NSManagedObject
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;

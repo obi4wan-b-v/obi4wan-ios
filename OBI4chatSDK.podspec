@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "3.0.4"
+  s.version       = "3.0.5"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
@@ -32,8 +32,7 @@ Pod::Spec.new do |s|
 
   s.dependency  'PusherSwift'
   s.dependency  'lottie-ios'
-  s.dependency  'Alamofire'
-  s.dependency  'ReachabilitySwift'
+  s.dependency  'Alamofire', '~> 5.0'
 
   s.swift_version = "4.2"
 
