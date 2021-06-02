@@ -39,39 +39,6 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
     get
   }
 }
-@objc public class ClientTyping : ObjectiveC.NSObject, Swift.Codable {
-  final public let typing: Swift.Bool
-  public init(typing: Swift.Bool)
-  @objc override dynamic public init()
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
-}
-@objc public class OBI4Chat : ObjectiveC.NSObject {
-  @objc public init(appGuid: Swift.String, userGuid: Swift.String? = nil, userName: Swift.String? = nil, botId: Swift.String? = nil, enableLauncher: Swift.Bool, externalConfiguration: OBI4chatSDK.ExternalChatConfigurationModel? = nil, externalStyle: OBI4chatSDK.ExternalStyle? = nil)
-  @objc public func isChatAvailable(_ completion: @escaping (OBI4chatSDK.ChatAvailability) -> Swift.Void)
-  @objc public func openChat(in viewController: UIKit.UIViewController? = nil)
-  @objc public func startBotSessionIfNeeded()
-  @objc public func getCurrentUserGuid() -> Swift.String
-  @objc public func getCurrentBotId() -> Swift.String
-  @objc public func deleteChatHistory()
-  @objc public func restartChat(userGuid: Swift.String? = nil, botId: Swift.String? = nil)
-  @objc public func closeChatSession()
-  @objc public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool)
-  @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
-  @objc override dynamic public init()
-  @objc deinit
-}
-@objc public protocol OBI4ChatObserver {
-  @objc func obi4Chat(_ chat: OBI4chatSDK.OBI4Chat, didReceiveNewMessage message: OBI4chatSDK.OBIMessage)
-  @objc func obi4Chat(_ chat: OBI4chatSDK.OBI4Chat, didReceiveTyping typing: OBI4chatSDK.ClientTyping)
-  @objc func obi4ChatInited(_ chat: OBI4chatSDK.OBI4Chat)
-  @objc func obi4ChatPreformSubmitted(_ chat: OBI4chatSDK.OBI4Chat)
-}
-@objc extension OBI4Chat {
-  @objc dynamic public func addObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
-  @objc dynamic public func removeObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
-}
 @_inheritsConvenienceInitializers @objc public class ExternalChatConfigurationModel : ObjectiveC.NSObject {
   public var saveChatHistory: Swift.Bool?
   public var emailFormText: Swift.String?
@@ -100,60 +67,16 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
 }
-@_inheritsConvenienceInitializers @objc public class ExternalStyle : ObjectiveC.NSObject {
-  public var incomingBalloon: OBI4chatSDK.BalloonStyle?
-  public var outgoingBalloon: OBI4chatSDK.BalloonStyle?
-  public var timestamp: OBI4chatSDK.FontStyle?
-  public var sendButton: OBI4chatSDK.FontStyle?
-  public var sendButtonText: Swift.String?
-  public var startButtonText: Swift.String?
-  public var inputTextField: OBI4chatSDK.FontStyle?
-  public var inputTextFieldPlaceholder: Swift.String?
-  public var headerTitle: OBI4chatSDK.FontStyle?
-  public var headerSubtitle: OBI4chatSDK.FontStyle?
-  public var headerTextColor: UIKit.UIColor?
-  public var formSentTitle: Swift.String?
-  public var formSentSubtitle: Swift.String?
-  public var backgroundColor: UIKit.UIColor?
-  public var buttonBorderColor: UIKit.UIColor?
-  public var buttonFillColor: UIKit.UIColor?
-  public var buttonColorNormal: UIKit.UIColor?
-  public var buttonColorDisabled: UIKit.UIColor?
-  public var buttonTextColor: UIKit.UIColor?
-  public var buttonFontSize: CoreGraphics.CGFloat?
-  public var buttonFontWeight: CoreGraphics.CGFloat?
-  public var buttonFont: Swift.String?
+extension NSAttributedString {
+  public func trimWhiteSpace() -> Foundation.NSAttributedString
+}
+@objc public class ClientTyping : ObjectiveC.NSObject, Swift.Codable {
+  final public let typing: Swift.Bool
+  public init(typing: Swift.Bool)
   @objc override dynamic public init()
   @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class BalloonStyle : ObjectiveC.NSObject {
-  public var fontStyle: OBI4chatSDK.FontStyle?
-  public var textColor: UIKit.UIColor?
-  public var backgroundColor: UIKit.UIColor?
-  @objc override dynamic public init()
-  @objc deinit
-}
-@_inheritsConvenienceInitializers @objc public class FontStyle : ObjectiveC.NSObject {
-  public var name: Swift.String?
-  public var size: CoreGraphics.CGFloat?
-  @objc override dynamic public init()
-  @objc deinit
-}
-precedencegroup NullabilityPrecedence {
-  associativity: right
-  higherThan: AssignmentPrecedence
-}
-infix operator ?= : NullabilityPrecedence
-@_inheritsConvenienceInitializers @objc(ClientMessage) public class ClientMessage : CoreData.NSManagedObject, Swift.Codable {
-  required convenience public init(from decoder: Swift.Decoder) throws
   public func encode(to encoder: Swift.Encoder) throws
-  @objc override dynamic public init(entity: CoreData.NSEntityDescription, insertInto context: CoreData.NSManagedObjectContext?)
-  @objc deinit
-}
-extension URLRequest {
-  public var curlString: Swift.String {
-    get
-  }
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public class OBIAttachment : ObjectiveC.NSObject, Swift.Codable {
   final public let url: Swift.String
@@ -164,19 +87,6 @@ extension URLRequest {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
-}
-@objc public class ChatAvailability : ObjectiveC.NSObject, Swift.Codable {
-  final public let available: Swift.Bool
-  public init(available: Swift.Bool)
-  @objc override dynamic public init()
-  @objc deinit
-  public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
-}
-@objc @_inheritsConvenienceInitializers public class AlertUtil : ObjectiveC.NSObject {
-  public static func showAlert(title: Swift.String, message: Swift.String? = nil)
-  @objc override dynamic public init()
-  @objc deinit
 }
 @objc public class OBIAuthor : ObjectiveC.NSObject, Swift.Codable {
   final public let url: Swift.String?
@@ -220,8 +130,92 @@ public enum VerticalAlignment {
   @objc override dynamic public init()
   @objc deinit
 }
-extension NSAttributedString {
-  public func trimWhiteSpace() -> Foundation.NSAttributedString
+@objc public class OBI4Chat : ObjectiveC.NSObject {
+  @objc public init(appGuid: Swift.String, userGuid: Swift.String? = nil, userName: Swift.String? = nil, botId: Swift.String? = nil, enableLauncher: Swift.Bool, externalConfiguration: OBI4chatSDK.ExternalChatConfigurationModel? = nil, externalStyle: OBI4chatSDK.ExternalStyle? = nil)
+  @objc public func isChatAvailable(_ completion: @escaping (OBI4chatSDK.ChatAvailability) -> Swift.Void)
+  @objc public func openChat(in viewController: UIKit.UIViewController? = nil)
+  @objc public func startBotSessionIfNeeded()
+  @objc public func getCurrentUserGuid() -> Swift.String
+  @objc public func getCurrentBotId() -> Swift.String
+  @objc public func deleteChatHistory()
+  @objc public func restartChat(userGuid: Swift.String? = nil, botId: Swift.String? = nil)
+  @objc public func closeChatSession()
+  @objc public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool)
+  @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@objc public protocol OBI4ChatObserver {
+  @objc func obi4Chat(_ chat: OBI4chatSDK.OBI4Chat, didReceiveNewMessage message: OBI4chatSDK.OBIMessage)
+  @objc func obi4Chat(_ chat: OBI4chatSDK.OBI4Chat, didReceiveTyping typing: OBI4chatSDK.ClientTyping)
+  @objc func obi4ChatInited(_ chat: OBI4chatSDK.OBI4Chat)
+  @objc func obi4ChatPreformSubmitted(_ chat: OBI4chatSDK.OBI4Chat)
+}
+@objc extension OBI4Chat {
+  @objc dynamic public func addObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
+  @objc dynamic public func removeObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
+}
+@objc public class ChatAvailability : ObjectiveC.NSObject, Swift.Codable {
+  final public let available: Swift.Bool
+  public init(available: Swift.Bool)
+  @objc override dynamic public init()
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+precedencegroup NullabilityPrecedence {
+  associativity: right
+  higherThan: AssignmentPrecedence
+}
+infix operator ?= : NullabilityPrecedence
+extension URLRequest {
+  public var curlString: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class AlertUtil : ObjectiveC.NSObject {
+  public static func showAlert(title: Swift.String, message: Swift.String? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ExternalStyle : ObjectiveC.NSObject {
+  public var incomingBalloon: OBI4chatSDK.BalloonStyle?
+  public var outgoingBalloon: OBI4chatSDK.BalloonStyle?
+  public var timestamp: OBI4chatSDK.FontStyle?
+  public var sendButton: OBI4chatSDK.FontStyle?
+  public var sendButtonText: Swift.String?
+  public var startButtonText: Swift.String?
+  public var inputTextField: OBI4chatSDK.FontStyle?
+  public var inputTextFieldPlaceholder: Swift.String?
+  public var headerTitle: OBI4chatSDK.FontStyle?
+  public var headerSubtitle: OBI4chatSDK.FontStyle?
+  public var headerTextColor: UIKit.UIColor?
+  public var formSentTitle: Swift.String?
+  public var formSentSubtitle: Swift.String?
+  public var backgroundColor: UIKit.UIColor?
+  public var buttonBorderColor: UIKit.UIColor?
+  public var buttonFillColor: UIKit.UIColor?
+  public var buttonColorNormal: UIKit.UIColor?
+  public var buttonColorDisabled: UIKit.UIColor?
+  public var buttonTextColor: UIKit.UIColor?
+  public var buttonFontSize: CoreGraphics.CGFloat?
+  public var buttonFontWeight: CoreGraphics.CGFloat?
+  public var buttonFont: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class BalloonStyle : ObjectiveC.NSObject {
+  public var fontStyle: OBI4chatSDK.FontStyle?
+  public var textColor: UIKit.UIColor?
+  public var backgroundColor: UIKit.UIColor?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class FontStyle : ObjectiveC.NSObject {
+  public var name: Swift.String?
+  public var size: CoreGraphics.CGFloat?
+  @objc override dynamic public init()
+  @objc deinit
 }
 extension OBI4chatSDK.OBIMessageType : Swift.Equatable {}
 extension OBI4chatSDK.OBIMessageType : Swift.Hashable {}

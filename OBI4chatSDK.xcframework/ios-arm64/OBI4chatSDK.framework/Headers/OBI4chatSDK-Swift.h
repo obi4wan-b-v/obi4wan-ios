@@ -188,7 +188,6 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #if __has_warning("-Watimport-in-framework-header")
 #pragma clang diagnostic ignored "-Watimport-in-framework-header"
 #endif
-@import CoreData;
 @import CoreGraphics;
 @import Foundation;
 @import ObjectiveC;
@@ -244,15 +243,6 @@ SWIFT_CLASS("_TtC11OBI4chatSDK16ChatAvailability")
 @interface ChatAvailability : NSObject
 - (nonnull instancetype)init SWIFT_UNAVAILABLE;
 + (nonnull instancetype)new SWIFT_UNAVAILABLE_MSG("-init is unavailable");
-@end
-
-@class NSEntityDescription;
-@class NSManagedObjectContext;
-
-/// Message wrapper model
-SWIFT_CLASS_NAMED("ClientMessage")
-@interface ClientMessage : NSManagedObject
-- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
