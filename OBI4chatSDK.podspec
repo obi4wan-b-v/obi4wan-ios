@@ -1,13 +1,13 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4chatSDK"
-  s.version       = "3.0.7"
+  s.version       = "3.0.8"
   s.summary       = "OBI4chatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
 
   s.platform     = :ios, "13"
-  
+
   s.license      = { :type => 'Apache License, Version 2.0', :text => <<-LICENSE
       Licensed under the Apache License, Version 2.0 (the "License");
       you may not use this file except in compliance with the License.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
       limitations under the License.
       LICENSE
     }
-    
+
   s.author        = { "OBI4wan" => "info@obi4wan.nl" }
   s.source       = { :git => "https://github.com/obi4wan-b-v/obi4wan-ios.git", :tag => "#{s.version}" }
 
@@ -41,4 +41,3 @@ Pod::Spec.new do |s|
   s.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
-
