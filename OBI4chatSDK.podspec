@@ -30,7 +30,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '13'
 
-  s.dependency  'PusherSwift'
+  s.dependency  'PusherSwift', '9.2.2'
   s.dependency  'lottie-ios'
   s.dependency  'Alamofire', '~> 5.0'
 
