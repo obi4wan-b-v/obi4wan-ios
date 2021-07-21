@@ -1,6 +1,6 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
-// swift-module-flags: -target x86_64-apple-ios11.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4chatSDK
+// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4chatSDK
 import AVKit
 import Alamofire
 import CoreData
@@ -20,11 +20,12 @@ import UIKit
   final public let attachment: OBI4chatSDK.OBIAttachment?
   public var date: Swift.String
   public var choices: [Swift.String]?
+  public var link: Swift.String?
   public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [Swift.String] = [])
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public enum OBIMessageType : Swift.String, Swift.Codable {
   case agent
@@ -32,8 +33,8 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   case typing
   case waiting
   case bot
-  public typealias RawValue = Swift.String
   public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
   public var rawValue: Swift.String {
     get
   }
@@ -63,26 +64,29 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   public var autoTriggerCooldownTime: Swift.Int?
   public var autoTriggerTriggerOnlyOnce: Swift.Bool?
   public var showMessageTimestamp: Swift.Bool?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
+}
+extension NSAttributedString {
+  public func trimWhiteSpace() -> Foundation.NSAttributedString
 }
 @objc public class ClientTyping : ObjectiveC.NSObject, Swift.Codable {
   final public let typing: Swift.Bool
   public init(typing: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public class OBIAttachment : ObjectiveC.NSObject, Swift.Codable {
   final public let url: Swift.String
   final public let type: Swift.String?
   final public let name: Swift.String
   public init(url: Swift.String, type: Swift.String?, name: Swift.String)
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 @objc public class OBIAuthor : ObjectiveC.NSObject, Swift.Codable {
   final public let url: Swift.String?
@@ -90,9 +94,9 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   public var guid: Swift.String?
   public init(url: Swift.String, name: Swift.String, guid: Swift.String)
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 public enum HorizontalAlignment {
   case left
@@ -101,20 +105,20 @@ public enum HorizontalAlignment {
   case trailing
   case justified
   public static func == (a: OBI4chatSDK.HorizontalAlignment, b: OBI4chatSDK.HorizontalAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 public enum VerticalAlignment {
   case top
   case center
   case bottom
   public static func == (a: OBI4chatSDK.VerticalAlignment, b: OBI4chatSDK.VerticalAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
   public var hashValue: Swift.Int {
     get
   }
-  public func hash(into hasher: inout Swift.Hasher)
 }
 @objc open class AlignedCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
   public var horizontalAlignment: OBI4chatSDK.HorizontalAlignment
@@ -138,10 +142,10 @@ public enum VerticalAlignment {
   @objc public func closeChatSession()
   @objc public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool)
   @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
-@objc public protocol OBI4ChatObserver : AnyObject {
+@objc public protocol OBI4ChatObserver {
   @objc func obi4Chat(_ chat: OBI4chatSDK.OBI4Chat, didReceiveNewMessage message: OBI4chatSDK.OBIMessage)
   @objc func obi4Chat(_ chat: OBI4chatSDK.OBI4Chat, didReceiveTyping typing: OBI4chatSDK.ClientTyping)
   @objc func obi4ChatInited(_ chat: OBI4chatSDK.OBI4Chat)
@@ -154,10 +158,10 @@ public enum VerticalAlignment {
 @objc public class ChatAvailability : ObjectiveC.NSObject, Swift.Codable {
   final public let available: Swift.Bool
   public init(available: Swift.Bool)
-  @objc deinit
   @objc override dynamic public init()
-  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
 }
 precedencegroup NullabilityPrecedence {
   associativity: right
@@ -171,8 +175,8 @@ extension URLRequest {
 }
 @objc @_inheritsConvenienceInitializers public class AlertUtil : ObjectiveC.NSObject {
   public static func showAlert(title: Swift.String, message: Swift.String? = nil)
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class ExternalStyle : ObjectiveC.NSObject {
   public var incomingBalloon: OBI4chatSDK.BalloonStyle?
@@ -197,21 +201,21 @@ extension URLRequest {
   public var buttonFontSize: CoreGraphics.CGFloat?
   public var buttonFontWeight: CoreGraphics.CGFloat?
   public var buttonFont: Swift.String?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class BalloonStyle : ObjectiveC.NSObject {
   public var fontStyle: OBI4chatSDK.FontStyle?
   public var textColor: UIKit.UIColor?
   public var backgroundColor: UIKit.UIColor?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 @_inheritsConvenienceInitializers @objc public class FontStyle : ObjectiveC.NSObject {
   public var name: Swift.String?
   public var size: CoreGraphics.CGFloat?
-  @objc deinit
   @objc override dynamic public init()
+  @objc deinit
 }
 extension OBI4chatSDK.OBIMessageType : Swift.Equatable {}
 extension OBI4chatSDK.OBIMessageType : Swift.Hashable {}
