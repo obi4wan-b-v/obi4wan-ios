@@ -6,11 +6,11 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		bIuMheITWW4B9QGxKFdW17RZOgM=
+		NGlPcViqn7G0wvzQter3UZ0P3fU=
 		</data>
 		<key>Chat.storyboardc/ChatFrameViewController.nib</key>
 		<data>
-		ZYn1etuMRn6MPqU1L/w8A3NykZg=
+		Q5SoTnw99hYtsoqGp0/ozjclFg0=
 		</data>
 		<key>Chat.storyboardc/Info.plist</key>
 		<data>
@@ -18,47 +18,47 @@
 		</data>
 		<key>Chat.storyboardc/vB3-Ik-B4Z-view-Uze-Dc-BOj.nib</key>
 		<data>
-		20cI+ciNXvsLe2xpXUWCpao8rJc=
+		LaV3BD1NGJVPk4Az8OIDWBICYVI=
 		</data>
 		<key>ChatActionCollectionViewCell.nib</key>
 		<data>
-		fsa0cmI9hRMFz1b5SUFEXtFLUzs=
+		Djp+YveuSY0gMfSZiQEws4UmLDU=
 		</data>
 		<key>ChatAttachmentCollectionViewCell.nib</key>
 		<data>
-		GjfoLSu6b2wxtYpJqgHopkHaD/E=
+		x6kqARj600erJWb8MFcK8hP89nc=
 		</data>
 		<key>ChatImageCollectionViewCell.nib</key>
 		<data>
-		DF+DX1o5r07+k6x6n2aC7D8rw1Q=
+		mqmnvFYwm8dSFdNeUTl03UWlURI=
 		</data>
 		<key>ChatTextCollectionViewCell.nib</key>
 		<data>
-		Rmq9aAeVeB+IjtaHJ28L2x6i5yQ=
+		di7jqMhafVyR/Nx+H/gdeHWIyPo=
 		</data>
 		<key>DotsCollectionViewCell.nib</key>
 		<data>
-		NBBxD5YiuzkdaifuOU7VcbWHz2w=
+		/O5A4lOYHEv+Gehvx8P8nPPsZao=
 		</data>
 		<key>Form.storyboardc/FormSentViewController.nib</key>
 		<data>
-		OpgPNDXoefSq5Z1ZKjUQv55NLE0=
+		27fGvNA1bLawqxpjuQhhRERS8mM=
 		</data>
 		<key>Form.storyboardc/FormViewController.nib</key>
 		<data>
-		kHK+0eMkZs4LuKcI3E2AgwiXjRE=
+		mrVSzIT7MRaAhhNBtJzycxYOQiE=
 		</data>
 		<key>Form.storyboardc/Info.plist</key>
 		<data>
-		twLaxSiiTrsr6RbnCgLwfcUGMgU=
+		hPb4F2FP0h6DFUVU+C8yMAvXCBM=
 		</data>
 		<key>Form.storyboardc/vB3-Ik-B4Z-view-Uze-Dc-BOj.nib</key>
 		<data>
-		JP/nNw3e3sd8h1ABEQchbi2dhck=
+		i3VdFEhmbq238xGif02REZ9qoBY=
 		</data>
 		<key>Form.storyboardc/vcB-dy-MVo-view-7d8-Id-zwE.nib</key>
 		<data>
-		D3ScLIg0rQGimmH0X1n+nst+wyQ=
+		cqZx3+p0GpzDIqO1t26u80/t6s0=
 		</data>
 		<key>Headers/OBI4chatSDK-Swift.h</key>
 		<data>
@@ -94,7 +94,7 @@
 		</data>
 		<key>InputView.nib</key>
 		<data>
-		A+8XMlQgnHxLKgyYp5YG4ludnFg=
+		ZARPRnr5pC9xpiE20WOAONAtimU=
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -130,11 +130,11 @@
 		</data>
 		<key>Navigation.storyboardc/NavigationController.nib</key>
 		<data>
-		h0AixRnX0JWCvZguot/FSR5LpLg=
+		hyI6bhZC2KkxGMukTbGkB/2bL5c=
 		</data>
 		<key>NavigationTitle.nib</key>
 		<data>
-		hGNTQQwDQFmGTcISHSrPUdtztZE=
+		ygyRG69dX3/am8tEaWna3fWCR1k=
 		</data>
 		<key>OBI4ChatSDK.momd/OBI4ChatSDK.mom</key>
 		<data>
@@ -155,14 +155,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HPhVV4ve+yrlcHaXIWuvl79adMA/bfV2w1ZAz2Q96Xs=
+			1IGE9RUcWoffmzRhWv4aUWQhyebXPVRNhVbnPjLtUtk=
 			</data>
 		</dict>
 		<key>Chat.storyboardc/ChatFrameViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			XeIFVD729ByMCLYzKl0rBh7SSz56kSMH7KgwXoiJOfE=
+			si82wGJ0qhPUbIOTBTcVoK2zPB9RmZzvwnqGBofzBi0=
 			</data>
 		</dict>
 		<key>Chat.storyboardc/Info.plist</key>
@@ -176,77 +176,77 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			WuWJFd3aPRIOSWrno9PY7ujPypyQTuHG2Z2w/CaUtEU=
+			iF1ztfsFvtGAsJVRyqFgnMHVDpdckzO8FZrVqeuqFIU=
 			</data>
 		</dict>
 		<key>ChatActionCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			A9i5IR9AdTY97pOo6EI7lghhcuvQGFfjLWFSlBsk6s4=
+			0tgad7rlbtT+grVBe0e3DrHnv7BfuUIgrjM7lN0rYfw=
 			</data>
 		</dict>
 		<key>ChatAttachmentCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			57BoTiTrH+INplrxcdM4S4+2IxJ41DKqu+ldzY4v9pU=
+			G8jmcESlckZNnu8EMXbz9oSbn7gLudr50nuAWsGnI7g=
 			</data>
 		</dict>
 		<key>ChatImageCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			UCoX1kHN3rM5BRz6Ifh+zVwbLHStLyFf8q6gYoX9LqY=
+			V/t86Ofiq2uRoMyw6xpANo9+ujctpox0ngPhzUVpnog=
 			</data>
 		</dict>
 		<key>ChatTextCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			WA3K5ZASUP9oqQZZxMjlNg5QhZYjcucGkKzj2/YpDxk=
+			JD2KHJELKUiQhUMb/SiA0L/xKePQud39zOrzIKMa8cE=
 			</data>
 		</dict>
 		<key>DotsCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			88VXS2oF30baP43lfQfKTh+aLLSUfxBTVcU6uxP30KI=
+			ctZuUdL0FgrSSL5rXumvA5Bf/mxSKZ1du2sCHQ28vt8=
 			</data>
 		</dict>
 		<key>Form.storyboardc/FormSentViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			J+6ug1Q62kefNVsAiIuvV7aqSX7ggI2EM2gRyD5cxHY=
+			L+qfHR1M4rc6ClenCLl/qFL85d9JeN60lO2pSW6GR2o=
 			</data>
 		</dict>
 		<key>Form.storyboardc/FormViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8AZoi9KE8fqil0IV0AB69KQg36QOK0dmCNL/nmiw+eA=
+			Jly6YqDw3by2dH/hnqBVwzI7XnZ550qJaA+IMTBTmzk=
 			</data>
 		</dict>
 		<key>Form.storyboardc/Info.plist</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			QHoky2e5WaG1vs9r5YCuht/bCibrdm59WwsmIRyi4uM=
+			xiMWV/5S1yFUtLF+OUy+m8DHoUUconMlNN6dIj/v8JA=
 			</data>
 		</dict>
 		<key>Form.storyboardc/vB3-Ik-B4Z-view-Uze-Dc-BOj.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			6x/8RXpPrvG6OG1zdCrHysBCwL7DdKFsCDA3DBuWqMY=
+			ubS9ymfFqyvQFSdJHQS3NObSAMYy4aqGaHIncfqXvZA=
 			</data>
 		</dict>
 		<key>Form.storyboardc/vcB-dy-MVo-view-7d8-Id-zwE.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			1fnEQ8CIygLtME6azzRURd0EbfYVdpQ4svP8G8e5VjM=
+			V1YsDEvD6WOhN0YH4JuzShskMCqD9EYSw69wBIAf1Oc=
 			</data>
 		</dict>
 		<key>Headers/OBI4chatSDK-Swift.h</key>
@@ -302,7 +302,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qd0sKrI3bCtD3NIxuLYB6D481yoP4qAJMO4dM7duDUQ=
+			0jhkzbnOa4ZljCNvyp0Y08/a0nyEJSbxrm+o0qDXyKs=
 			</data>
 		</dict>
 		<key>Modules/OBI4chatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -365,14 +365,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			qTtkZ/D4IvmBHqqzWnn+cl9KgY3o2eCHQu9RnZRbpAU=
+			SRsbG6dlX5XXg+V9ov8t2WUY27oP4YHEvEpHJ+l3dbc=
 			</data>
 		</dict>
 		<key>NavigationTitle.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			F9BasoNr9iaUCVAJ76pLY7XLxrpVZ8EDJDHmey29epU=
+			Gp6f9SELbh19EJETLnzf4ZDAlX5ispFsO2l0UAm6ISM=
 			</data>
 		</dict>
 		<key>OBI4ChatSDK.momd/OBI4ChatSDK.mom</key>
