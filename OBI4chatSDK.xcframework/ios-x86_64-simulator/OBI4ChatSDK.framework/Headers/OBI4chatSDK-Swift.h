@@ -275,7 +275,6 @@ SWIFT_CLASS("_TtC11OBI4chatSDK9FontStyle")
 @class NSString;
 @class NSNumber;
 @class UIViewController;
-@class OBIMessage;
 
 /// Main class for  the chat. This is the public interface for sending, receiving messages and for setting up the chat
 SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
@@ -316,12 +315,6 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 - (void)restartChatWithUserGuid:(NSString * _Nullable)userGuid botId:(NSString * _Nullable)botId;
 /// Close chat session
 - (void)closeChatSession;
-/// Sending message to agent.
-/// \param message message to send
-///
-/// \param shouldSave should the message be saved in the local base
-///
-- (void)sendMessageWithMessage:(OBIMessage * _Nonnull)message shouldSave:(BOOL)shouldSave;
 /// Sending event that indicates if the user is typing or not.
 /// \param typing model that indicates if the user is typing or not
 ///
@@ -345,6 +338,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK8OBI4Chat")
 
 
 
+@class OBIMessage;
 
 /// Protocol that should be implemented to get observations when the new message or typing event are received, when chat is inited and when submit is performed.
 SWIFT_PROTOCOL("_TtP11OBI4chatSDK16OBI4ChatObserver_")

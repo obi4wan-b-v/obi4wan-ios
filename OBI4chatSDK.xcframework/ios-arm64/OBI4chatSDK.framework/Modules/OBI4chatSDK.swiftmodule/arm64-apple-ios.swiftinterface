@@ -19,9 +19,9 @@ import UIKit
   final public let author: OBI4chatSDK.OBIAuthor?
   final public let attachment: OBI4chatSDK.OBIAttachment?
   public var date: Swift.String
-  public var choices: [Swift.String]?
+  public var choices: [OBI4chatSDK.Choice]
   public var link: Swift.String?
-  public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [Swift.String] = [])
+  public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [OBI4chatSDK.Choice] = [])
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
@@ -77,6 +77,10 @@ extension NSAttributedString {
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
+}
+public struct Choice : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
 }
 @objc public class OBIAttachment : ObjectiveC.NSObject, Swift.Codable {
   final public let url: Swift.String
@@ -140,7 +144,7 @@ public enum VerticalAlignment {
   @objc public func deleteChatHistory()
   @objc public func restartChat(userGuid: Swift.String? = nil, botId: Swift.String? = nil)
   @objc public func closeChatSession()
-  @objc public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool)
+  public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool, choice: OBI4chatSDK.Choice? = nil, isQuickReply: Swift.Bool)
   @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
   @objc override dynamic public init()
   @objc deinit
