@@ -22,10 +22,10 @@ import UIKit
   public var choices: [OBI4chatSDK.Choice]
   public var link: Swift.String?
   public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [OBI4chatSDK.Choice] = [])
+  required public init(from decoder: Swift.Decoder) throws
   @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
-  required public init(from decoder: Swift.Decoder) throws
 }
 public enum OBIMessageType : Swift.String, Swift.Codable {
   case agent
