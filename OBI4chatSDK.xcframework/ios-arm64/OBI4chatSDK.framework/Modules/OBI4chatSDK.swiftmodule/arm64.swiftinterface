@@ -1,5 +1,5 @@
 // swift-interface-format-version: 1.0
-// swift-compiler-version: Apple Swift version 5.4.2 (swiftlang-1205.0.28.2 clang-1205.0.19.57)
+// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4chatSDK
 import AVKit
 import Alamofire
@@ -13,6 +13,7 @@ import PhotosUI
 import PusherSwift
 import Swift
 import UIKit
+import _Concurrency
 @objc public class OBIMessage : ObjectiveC.NSObject, Swift.Codable {
   final public let content: Swift.String?
   final public let type: Swift.String
@@ -23,7 +24,6 @@ import UIKit
   public var link: Swift.String?
   public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [OBI4chatSDK.Choice] = [])
   required public init(from decoder: Swift.Decoder) throws
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
 }
@@ -67,13 +67,12 @@ public enum OBIMessageType : Swift.String, Swift.Codable {
   @objc override dynamic public init()
   @objc deinit
 }
-extension NSAttributedString {
+extension Foundation.NSAttributedString {
   public func trimWhiteSpace() -> Foundation.NSAttributedString
 }
 @objc public class ClientTyping : ObjectiveC.NSObject, Swift.Codable {
   final public let typing: Swift.Bool
   public init(typing: Swift.Bool)
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -117,7 +116,6 @@ public struct Choice : Swift.Codable {
   final public let type: Swift.String?
   final public let name: Swift.String
   public init(url: Swift.String, type: Swift.String?, name: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -153,7 +151,6 @@ public struct Entity : Swift.Codable {
   final public let name: Swift.String
   public var guid: Swift.String?
   public init(url: Swift.String, name: Swift.String, guid: Swift.String)
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -180,14 +177,13 @@ public enum VerticalAlignment {
     get
   }
 }
-@objc open class AlignedCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
-  public var horizontalAlignment: OBI4chatSDK.HorizontalAlignment
-  public var verticalAlignment: OBI4chatSDK.VerticalAlignment
-  public init(horizontalAlignment: OBI4chatSDK.HorizontalAlignment = .justified, verticalAlignment: OBI4chatSDK.VerticalAlignment = .center)
-  @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
-  @objc override dynamic open func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
-  @objc override dynamic public init()
+@objc @_Concurrency.MainActor(unsafe) open class AlignedCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) public var horizontalAlignment: OBI4chatSDK.HorizontalAlignment
+  @_Concurrency.MainActor(unsafe) public var verticalAlignment: OBI4chatSDK.VerticalAlignment
+  @_Concurrency.MainActor(unsafe) public init(horizontalAlignment: OBI4chatSDK.HorizontalAlignment = .justified, verticalAlignment: OBI4chatSDK.VerticalAlignment = .center)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
   @objc deinit
 }
 @objc public class OBI4Chat : ObjectiveC.NSObject {
@@ -202,7 +198,6 @@ public enum VerticalAlignment {
   @objc public func closeChatSession()
   public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool, choice: OBI4chatSDK.Choice? = nil, isQuickReply: Swift.Bool, botMessageCompletionHandler: ((OBI4chatSDK.BotCommunicationStatus) -> Swift.Void)? = nil)
   @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
-  @objc override dynamic public init()
   @objc deinit
 }
 @objc public protocol OBI4ChatObserver {
@@ -211,14 +206,13 @@ public enum VerticalAlignment {
   @objc func obi4ChatInited(_ chat: OBI4chatSDK.OBI4Chat)
   @objc func obi4ChatPreformSubmitted(_ chat: OBI4chatSDK.OBI4Chat)
 }
-@objc extension OBI4Chat {
+@objc extension OBI4chatSDK.OBI4Chat {
   @objc dynamic public func addObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
   @objc dynamic public func removeObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
 }
 @objc public class ChatAvailability : ObjectiveC.NSObject, Swift.Codable {
   final public let available: Swift.Bool
   public init(available: Swift.Bool)
-  @objc override dynamic public init()
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
   required public init(from decoder: Swift.Decoder) throws
@@ -228,7 +222,7 @@ precedencegroup NullabilityPrecedence {
   higherThan: AssignmentPrecedence
 }
 infix operator ?= : NullabilityPrecedence
-extension URLRequest {
+extension Foundation.URLRequest {
   public var curlString: Swift.String {
     get
   }
