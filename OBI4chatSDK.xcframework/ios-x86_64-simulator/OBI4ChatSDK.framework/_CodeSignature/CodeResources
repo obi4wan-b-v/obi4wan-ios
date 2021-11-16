@@ -36,6 +36,10 @@
 		<data>
 		OwPJEobdVMhD1hhQvJjQuXFG+to=
 		</data>
+		<key>DefaultCollectionViewCell.nib</key>
+		<data>
+		WulH7pflvz11nPgGhxn8mRyUgY0=
+		</data>
 		<key>DotsCollectionViewCell.nib</key>
 		<data>
 		rkWo3V2lurcQ7lbxmQP+peQPwqU=
@@ -62,7 +66,7 @@
 		</data>
 		<key>Headers/OBI4chatSDK-Swift.h</key>
 		<data>
-		CppJNZOEwNBpPw+3AV4qgC5pfMs=
+		2hG7QlNoY+hecyWMEjlFu4M8Qlo=
 		</data>
 		<key>Headers/OBI4chatSDK.h</key>
 		<data>
@@ -106,7 +110,7 @@
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		F2anOkxi1+Esl+UKsZIy/TwgM4c=
+		0taOMTZHoaBKRDpxoBlYZ/0Im8g=
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/x86_64.swiftdoc</key>
 		<data>
@@ -118,7 +122,7 @@
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/x86_64.swiftmodule</key>
 		<data>
-		F2anOkxi1+Esl+UKsZIy/TwgM4c=
+		0taOMTZHoaBKRDpxoBlYZ/0Im8g=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -207,6 +211,13 @@
 			GzHK2o3k+0M/ItexEU8c8VehbhkRFrElKUqpzVQsnw0=
 			</data>
 		</dict>
+		<key>DefaultCollectionViewCell.nib</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			1tlLQzJFq62R67FDIuUSSMuSnvAYpMQiCHGU0evyU0k=
+			</data>
+		</dict>
 		<key>DotsCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
@@ -253,7 +264,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			kPr01Ok7fP+GhjI46ljVk55aKrxj+N7XvgEUamsEH/M=
+			vu/a53a+LuY31orBHLMiCR/CpXEAKNzQXHxi01ru/JI=
 			</data>
 		</dict>
 		<key>Headers/OBI4chatSDK.h</key>
@@ -323,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FgRr2dj1tzqdvnOdJqBsfwDbFoihHWgvUInNwP1L4s8=
+			Bbrq18MCxZPZ38mSG5m683kX/nwq6vTJ8cfRJ23Zgdc=
 			</data>
 		</dict>
 		<key>Modules/OBI4chatSDK.swiftmodule/x86_64.swiftdoc</key>
@@ -344,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			FgRr2dj1tzqdvnOdJqBsfwDbFoihHWgvUInNwP1L4s8=
+			Bbrq18MCxZPZ38mSG5m683kX/nwq6vTJ8cfRJ23Zgdc=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
