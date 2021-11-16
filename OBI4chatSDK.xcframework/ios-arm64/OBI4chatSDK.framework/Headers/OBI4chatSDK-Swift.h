@@ -403,6 +403,7 @@ SWIFT_CLASS("_TtC11OBI4chatSDK10OBIMessage")
 
 
 
+
 #if __has_attribute(external_source_symbol)
 # pragma clang attribute pop
 #endif
