@@ -6,7 +6,7 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-		eH1dnnS4MIVg4yGyEb5imiXtAyY=
+		yX/XFIl5/TRvdNqUhKneWei5hKI=
 		</data>
 		<key>Chat.storyboardc/ChatFrameViewController.nib</key>
 		<data>
@@ -110,7 +110,7 @@
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		8vYm5MxQ40uNWblyGGz8vGNAmF0=
+		oKiVwqtsy060gvNTv7/h+RGVAr0=
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/arm64.swiftdoc</key>
 		<data>
@@ -122,7 +122,7 @@
 		</data>
 		<key>Modules/OBI4chatSDK.swiftmodule/arm64.swiftmodule</key>
 		<data>
-		8vYm5MxQ40uNWblyGGz8vGNAmF0=
+		oKiVwqtsy060gvNTv7/h+RGVAr0=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -159,7 +159,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			jR3AcTKy16kZ9h0WVdKVgE/GGSYjI1J13lmQ7CQz3+g=
+			+7OTdDO6DH81k7jd3+pUPbVyme2i7RoKPvGsPx3RkzU=
 			</data>
 		</dict>
 		<key>Chat.storyboardc/ChatFrameViewController.nib</key>
@@ -334,7 +334,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Edu+b3/FOLK9i70w9+7RPoYejfWAJlyZ8Ph6wJOM4UE=
+			n/XesYRdJs733fI0zRtGdXHRFlK6AFMOk2ZrqspGHVI=
 			</data>
 		</dict>
 		<key>Modules/OBI4chatSDK.swiftmodule/arm64.swiftdoc</key>
@@ -355,7 +355,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Edu+b3/FOLK9i70w9+7RPoYejfWAJlyZ8Ph6wJOM4UE=
+			n/XesYRdJs733fI0zRtGdXHRFlK6AFMOk2ZrqspGHVI=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
