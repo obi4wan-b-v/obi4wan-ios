@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
 
-  s.name          = "OBI4ChatSDK"
+  s.name          = "OBI4chatSDK"
   s.version       = "4.0.0"
   s.summary       = "OBI4ChatSDK for chat"
 
