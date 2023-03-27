@@ -1,12 +1,7 @@
 // swift-interface-format-version: 1.0
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 // swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
 // swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4ChatSDK
 // swift-module-flags-ignorable: -enable-bare-slash-regex
-=======
-// swift-compiler-version: Apple Swift version 5.5.1 (swiftlang-1300.0.31.4 clang-1300.0.29.6)
-// swift-module-flags: -target arm64-apple-ios13.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4chatSDK
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 import AVKit
 import Alamofire
 import Combine
@@ -21,25 +16,16 @@ import PusherSwift
 import Swift
 import UIKit
 import _Concurrency
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 import _StringProcessing
-=======
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 @objc public class OBIMessage : ObjectiveC.NSObject, Swift.Codable {
   final public let content: Swift.String?
   final public let type: Swift.String
   final public let author: OBI4ChatSDK.OBIAuthor?
   final public let attachment: OBI4ChatSDK.OBIAttachment?
   public var date: Swift.String
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   public var choices: [OBI4ChatSDK.Choice]
   public var link: Swift.String?
   public init(content: Swift.String?, type: Swift.String, author: OBI4ChatSDK.OBIAuthor?, attachment: OBI4ChatSDK.OBIAttachment?, date: Swift.String, choices: [OBI4ChatSDK.Choice] = [])
-=======
-  public var choices: [OBI4chatSDK.Choice]
-  public var link: Swift.String?
-  public init(content: Swift.String?, type: Swift.String, author: OBI4chatSDK.OBIAuthor?, attachment: OBI4chatSDK.OBIAttachment?, date: Swift.String, choices: [OBI4chatSDK.Choice] = [])
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   required public init(from decoder: Swift.Decoder) throws
   @objc deinit
   public func encode(to encoder: Swift.Encoder) throws
@@ -107,11 +93,7 @@ public enum BotCommunicationStatus : Swift.String {
 public struct Choice : Swift.Codable {
   public let buttonText: Swift.String
   public let intent: Swift.String
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   public let entity: OBI4ChatSDK.Entity?
-=======
-  public let entity: OBI4chatSDK.Entity?
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   public enum CodingKeys : Swift.String, Swift.CodingKey {
     case intent, entity
     case buttonText
@@ -199,21 +181,12 @@ public enum VerticalAlignment {
   }
 }
 @objc @_Concurrency.MainActor(unsafe) open class AlignedCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   @_Concurrency.MainActor(unsafe) public var horizontalAlignment: OBI4ChatSDK.HorizontalAlignment
   @_Concurrency.MainActor(unsafe) public var verticalAlignment: OBI4ChatSDK.VerticalAlignment
   @_Concurrency.MainActor(unsafe) public init(horizontalAlignment: OBI4ChatSDK.HorizontalAlignment = .justified, verticalAlignment: OBI4ChatSDK.VerticalAlignment = .center)
   @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
   @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
-=======
-  @_Concurrency.MainActor(unsafe) public var horizontalAlignment: OBI4chatSDK.HorizontalAlignment
-  @_Concurrency.MainActor(unsafe) public var verticalAlignment: OBI4chatSDK.VerticalAlignment
-  @_Concurrency.MainActor(unsafe) public init(horizontalAlignment: OBI4chatSDK.HorizontalAlignment = .justified, verticalAlignment: OBI4chatSDK.VerticalAlignment = .center)
-  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
-  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreGraphics.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   @objc deinit
 }
 @objc public class OBI4Chat : ObjectiveC.NSObject {
@@ -226,13 +199,8 @@ public enum VerticalAlignment {
   @objc public func deleteChatHistory()
   @objc public func restartChat(userGuid: Swift.String? = nil, botId: Swift.String? = nil)
   @objc public func closeChatSession()
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   public func sendMessage(message: OBI4ChatSDK.OBIMessage, shouldSave: Swift.Bool, choice: OBI4ChatSDK.Choice? = nil, isQuickReply: Swift.Bool, botMessageCompletionHandler: ((OBI4ChatSDK.BotCommunicationStatus) -> Swift.Void)? = nil)
   @objc public func sendTyping(typing: OBI4ChatSDK.ClientTyping)
-=======
-  public func sendMessage(message: OBI4chatSDK.OBIMessage, shouldSave: Swift.Bool, choice: OBI4chatSDK.Choice? = nil, isQuickReply: Swift.Bool, botMessageCompletionHandler: ((OBI4chatSDK.BotCommunicationStatus) -> Swift.Void)? = nil)
-  @objc public func sendTyping(typing: OBI4chatSDK.ClientTyping)
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
   @objc deinit
 }
 @objc public protocol OBI4ChatObserver {
@@ -241,15 +209,9 @@ public enum VerticalAlignment {
   @objc func obi4ChatInited(_ chat: OBI4ChatSDK.OBI4Chat)
   @objc func obi4ChatPreformSubmitted(_ chat: OBI4ChatSDK.OBI4Chat)
 }
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 @objc extension OBI4ChatSDK.OBI4Chat {
   @objc dynamic public func addObserver(_ observer: OBI4ChatSDK.OBI4ChatObserver)
   @objc dynamic public func removeObserver(_ observer: OBI4ChatSDK.OBI4ChatObserver)
-=======
-@objc extension OBI4chatSDK.OBI4Chat {
-  @objc dynamic public func addObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
-  @objc dynamic public func removeObserver(_ observer: OBI4chatSDK.OBI4ChatObserver)
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 }
 @objc public class ChatAvailability : ObjectiveC.NSObject, Swift.Codable {
   final public let available: Swift.Bool
@@ -312,7 +274,6 @@ extension Foundation.URLRequest {
   @objc override dynamic public init()
   @objc deinit
 }
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-arm64/OBI4ChatSDK.framework/Modules/OBI4ChatSDK.swiftmodule/arm64-apple-ios.swiftinterface
 extension OBI4ChatSDK.OBIMessageType : Swift.Equatable {}
 extension OBI4ChatSDK.OBIMessageType : Swift.Hashable {}
 extension OBI4ChatSDK.OBIMessageType : Swift.RawRepresentable {}
@@ -329,21 +290,3 @@ extension OBI4ChatSDK.HorizontalAlignment : Swift.Equatable {}
 extension OBI4ChatSDK.HorizontalAlignment : Swift.Hashable {}
 extension OBI4ChatSDK.VerticalAlignment : Swift.Equatable {}
 extension OBI4ChatSDK.VerticalAlignment : Swift.Hashable {}
-=======
-extension OBI4chatSDK.OBIMessageType : Swift.Equatable {}
-extension OBI4chatSDK.OBIMessageType : Swift.Hashable {}
-extension OBI4chatSDK.OBIMessageType : Swift.RawRepresentable {}
-extension OBI4chatSDK.BotCommunicationStatus : Swift.Equatable {}
-extension OBI4chatSDK.BotCommunicationStatus : Swift.Hashable {}
-extension OBI4chatSDK.BotCommunicationStatus : Swift.RawRepresentable {}
-extension OBI4chatSDK.Choice.CodingKeys : Swift.Equatable {}
-extension OBI4chatSDK.Choice.CodingKeys : Swift.Hashable {}
-extension OBI4chatSDK.Choice.CodingKeys : Swift.RawRepresentable {}
-extension OBI4chatSDK.Entity.CodingKeys : Swift.Equatable {}
-extension OBI4chatSDK.Entity.CodingKeys : Swift.Hashable {}
-extension OBI4chatSDK.Entity.CodingKeys : Swift.RawRepresentable {}
-extension OBI4chatSDK.HorizontalAlignment : Swift.Equatable {}
-extension OBI4chatSDK.HorizontalAlignment : Swift.Hashable {}
-extension OBI4chatSDK.VerticalAlignment : Swift.Equatable {}
-extension OBI4chatSDK.VerticalAlignment : Swift.Hashable {}
->>>>>>> master:OBI4chatSDK.xcframework/ios-arm64/OBI4chatSDK.framework/Modules/OBI4chatSDK.swiftmodule/arm64-apple-ios.swiftinterface

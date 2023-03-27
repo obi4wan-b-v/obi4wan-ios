@@ -6,23 +6,15 @@
 	<dict>
 		<key>Assets.car</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		+f93+MhbDcipb+HkN4BcLkE59L8=
-=======
-		yX/XFIl5/TRvdNqUhKneWei5hKI=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Chat.storyboardc/ChatFrameViewController.nib/objects-14.0+.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		6S4rdIzO5QKu17nfwCR/uSN3QYc=
 		</data>
 		<key>Chat.storyboardc/ChatFrameViewController.nib/runtime.nib</key>
 		<data>
 		6S4rdIzO5QKu17nfwCR/uSN3QYc=
-=======
-		T+FCuwip5DCATKSPCpp8kA6sBQU=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Chat.storyboardc/Info.plist</key>
 		<data>
@@ -30,7 +22,6 @@
 		</data>
 		<key>Chat.storyboardc/vB3-Ik-B4Z-view-Uze-Dc-BOj.nib/objects-14.0+.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		MttjSxD7qXs4uDMOjS1XpuiKZ/Q=
 		</data>
 		<key>Chat.storyboardc/vB3-Ik-B4Z-view-Uze-Dc-BOj.nib/runtime.nib</key>
@@ -40,45 +31,21 @@
 		<key>ChatActionCollectionViewCell.nib</key>
 		<data>
 		wyvc4IUCO7NFBQgB5B05CgM/Wec=
-=======
-		U5zWfYPE4SJ5MFDpHfmwfd4iFXA=
-		</data>
-		<key>ChatActionCollectionViewCell.nib</key>
-		<data>
-		rluyIFdqJ+/ivtMARhiCLZRxug4=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>ChatAttachmentTableViewCell.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		8MnyykvjURtR45Nv9Jj7cQ4lG2c=
-=======
-		tYksX8Cha9kSZ9i4+KsOt6DFch0=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>ChatImageTableViewCell.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		VfdjjKNz1dK4er63p6p1GRd1MEw=
-=======
-		eYwfKLMwcaVfwsAbb2iGoq8bWN0=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>ChatTextTableViewCell.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		hn9UVAmZlfk/nJmvq/4NKKkNuNY=
-=======
-		OwPJEobdVMhD1hhQvJjQuXFG+to=
-		</data>
-		<key>DefaultCollectionViewCell.nib</key>
-		<data>
-		WulH7pflvz11nPgGhxn8mRyUgY0=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>DefaultTableViewCell.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		fQx+RMo5ZOFV0HmTSoJPLXF9xhE=
 		</data>
 		<key>DotsTableViewCell.nib</key>
@@ -92,17 +59,6 @@
 		<key>Form.storyboardc/FormViewController.nib</key>
 		<data>
 		ezMG3FWjTixKnmcOzjOfRONNmUI=
-=======
-		rkWo3V2lurcQ7lbxmQP+peQPwqU=
-		</data>
-		<key>Form.storyboardc/FormSentViewController.nib</key>
-		<data>
-		mPMAP0QgDZ1LPAl+FI8Lj4oDwig=
-		</data>
-		<key>Form.storyboardc/FormViewController.nib</key>
-		<data>
-		ODPmyQPTNMdvDQEXmPfcGtN2jXU=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Form.storyboardc/Info.plist</key>
 		<data>
@@ -110,27 +66,15 @@
 		</data>
 		<key>Form.storyboardc/vB3-Ik-B4Z-view-Uze-Dc-BOj.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		42hMbyXxI8AdfwVRp4GOSJh92BE=
 		</data>
 		<key>Form.storyboardc/vcB-dy-MVo-view-7d8-Id-zwE.nib</key>
 		<data>
 		ZCkJxMy9GnN1OC/KeGd2O/UtGIM=
-=======
-		XEXM1efm9mfXaPLdZyrRkn6crLk=
-		</data>
-		<key>Form.storyboardc/vcB-dy-MVo-view-7d8-Id-zwE.nib</key>
-		<data>
-		YHVocqONWxNn/xfo3CooIO33FRk=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Headers/OBI4ChatSDK-Swift.h</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		hC+Xa9tjsflA4Xks3y8xf9+YnzI=
-=======
-		2hG7QlNoY+hecyWMEjlFu4M8Qlo=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Headers/OBI4ChatSDK.h</key>
 		<data>
@@ -158,63 +102,31 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		GBkpkl+PPg6tPRlrgNbiVWMP/CA=
 		</data>
 		<key>InputView.nib</key>
 		<data>
 		domimmi0q7XvcIsjLjKEh7zcTTM=
-=======
-		/Ufxku/JbXPyDYjBSBIV3vgBfJM=
-		</data>
-		<key>InputView.nib</key>
-		<data>
-		mkvJrVx6hR71ZbwMfOIsvm9Q3IE=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		C4QtRkMiPIhI/PSjlvMdv83V9+k=
-=======
-		yf0y8KxSj8kai9wsW2rYsj5ZYBQ=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		nqH2foqVfdQ5nQ4mbg5Z84HCGMo=
-=======
-		06avgZ7UV+aLhJO9msnmaCRqqxo=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		zxHb+bRE6ITZLodJbmARff5KwMo=
-=======
-		16bJLO9wqJBQBufickXoc/Bu8Vc=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		nqH2foqVfdQ5nQ4mbg5Z84HCGMo=
-=======
-		yf0y8KxSj8kai9wsW2rYsj5ZYBQ=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		/EFqR4UJk9Hd2mBYvHe8UiX4jEs=
-=======
-		06avgZ7UV+aLhJO9msnmaCRqqxo=
-		</data>
-		<key>Modules/OBI4chatSDK.swiftmodule/x86_64.swiftmodule</key>
-		<data>
-		16bJLO9wqJBQBufickXoc/Bu8Vc=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -226,19 +138,11 @@
 		</data>
 		<key>Navigation.storyboardc/NavigationController.nib</key>
 		<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		siRhpG8eUKHMHtUUVLcz4KNabc4=
 		</data>
 		<key>NavigationTitle.nib</key>
 		<data>
 		zrVTY8QYW7OML6O5ob+tW6AzZL8=
-=======
-		2VzoI/GBQbGOAUFnnzuDPV3xEEk=
-		</data>
-		<key>NavigationTitle.nib</key>
-		<data>
-		3dAq/x0Z5iDF47cnLThWkm1jkn0=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 		</data>
 		<key>OBI4ChatSDK.momd/OBI4ChatSDK.mom</key>
 		<data>
@@ -259,18 +163,13 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			HonAHCqqS2StOncl5sBvd68aMCHWx75RGyg/hOqnigQ=
-=======
-			+7OTdDO6DH81k7jd3+pUPbVyme2i7RoKPvGsPx3RkzU=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Chat.storyboardc/ChatFrameViewController.nib/objects-14.0+.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			kAG7CEZzL4g94two03C1zrxVj5t70g/gKCNLLUa5oxc=
 			</data>
 		</dict>
@@ -279,9 +178,6 @@
 			<key>hash2</key>
 			<data>
 			kAG7CEZzL4g94two03C1zrxVj5t70g/gKCNLLUa5oxc=
-=======
-			BpDVl8AZM1rLAmr7Kweq4DnNmnBRCtODZ/H8TrKhBUU=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Chat.storyboardc/Info.plist</key>
@@ -295,7 +191,6 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			bFpwjZrUi4Pd+WgCRxgo6RzDNsnAwtBlXyTS01Q11+8=
 			</data>
 		</dict>
@@ -304,67 +199,40 @@
 			<key>hash2</key>
 			<data>
 			EAPytbbP3eTtCMEBSW82WVg1DdwVjNjIGi2cxtM2c5s=
-=======
-			F2NwAZHaYxgrt4NbG1F+B7RtBJ55Xx9JJch+XV+uTGI=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>ChatActionCollectionViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			c5gzAhL1UsTGZSjXcGN/8hRR0z9NQobdwi6FnOl5kmA=
-=======
-			SyXWVOpzqz+crhV5ifP+Zeu3EgDlPzLMNRcI7ZLhmoA=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>ChatAttachmentTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			vujqbw7vbuC004PrkYu60W4DR8I2fc519OAidzl9dto=
-=======
-			/7KIeqv1isj3nR6lqfGueHAKugnwdPcCX7ZkKIO06y8=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>ChatImageTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			Mmi9O9vbu6lRRnnLIU6rSVVm2Jd7xC9TX3LU+iR123s=
-=======
-			KM75BoEsdXGTgkjd3cFinhDVUwtoQetNa1+H2dwAdog=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>ChatTextTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			eXAckZ+TpgTYo+NTNog0BI8UNRcNnuPJ/4ftsCPUIZk=
-=======
-			GzHK2o3k+0M/ItexEU8c8VehbhkRFrElKUqpzVQsnw0=
-			</data>
-		</dict>
-		<key>DefaultCollectionViewCell.nib</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			1tlLQzJFq62R67FDIuUSSMuSnvAYpMQiCHGU0evyU0k=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>DefaultTableViewCell.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			RyT08pfImDSO2ONtKPsv8piuPs0Mamo7bKWvJ/GTEXI=
 			</data>
 		</dict>
@@ -373,31 +241,20 @@
 			<key>hash2</key>
 			<data>
 			DoAZg7fJuuYISugNpgFhANjxfR7AS/HEkGOyK/5FlVg=
-=======
-			gbctDdc65dbzsf4NhgRYhIoAfqCNg3AAsnqvg5vTSuw=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Form.storyboardc/FormSentViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			aMD7ow4ARPUKCkTiR63SHG+kzHuxwi+AhTj6QaD4yoU=
-=======
-			XWoVIIm51KMXGpIKofazQnVe8dIGsDnnAYe/DX98G00=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Form.storyboardc/FormViewController.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			iG/cJkHdOnAvVJnvqfBEG3/6WVxu2K7V5f4tIcfxdWo=
-=======
-			cL/Hp4p8KBrqzrNik2+U4xNp8envQ9dRJHA9n0EZJ3k=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Form.storyboardc/Info.plist</key>
@@ -411,33 +268,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			b/843SqF9JX6qS75LhlFLwQlJEKfeyV0KcHIl2XgU3M=
-=======
-			7CEWt6HFiX6JsQoLqskPDDg/EZKJq4ZcFZFqNTZYvuw=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Form.storyboardc/vcB-dy-MVo-view-7d8-Id-zwE.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			zoyiK1GdLeI6DzMQcENojVaEY07/oGH35Jp9NPEmq0k=
-=======
-			6aISCZxnRE0dAiMeyg4PGVY0ATYiGG2hW0QQUnCS+Ys=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Headers/OBI4ChatSDK-Swift.h</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			LMGJ/GKjkLfy2ZHW1ab2RaQQ74RA2uIrUqGSniIKuLo=
-=======
-			vu/a53a+LuY31orBHLMiCR/CpXEAKNzQXHxi01ru/JI=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Headers/OBI4ChatSDK.h</key>
@@ -486,73 +331,42 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			jRSSdKk2wxm/1hSeAfThleNG1wyIcdal3HtCl3Trfxk=
-=======
-			wFG31wxlVmPCj2F9fS4gc+BjlnSvQqByjUQ7yM60ltA=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			cv3BHAf3ZTGxgJ+P2KEF/rnbxX4hCarf5M1LC1ZCcg0=
-=======
-			e5Q0rqxJ6vgKDrlDzCtbRpQsIPd6+HED2n6r6lO30Rg=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			QydijZImA20DUs13INWAtkaWvMmLC9XBM2KQC9LMFSg=
-=======
-			zztJEDwzUX9izNV0bP8CX727Ol7PkM3U5TJmIEH2fbI=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			DbxQyfMqJITiG/basklMSNtDIVTMvChTjWDbUiaFMjA=
-=======
-			N/K4elAAzYPIYs/gJAs6TArohmZZSSxDwOH2/QZArRU=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			QydijZImA20DUs13INWAtkaWvMmLC9XBM2KQC9LMFSg=
-=======
-			e5Q0rqxJ6vgKDrlDzCtbRpQsIPd6+HED2n6r6lO30Rg=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Modules/OBI4ChatSDK.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			CPmk9CjREvdyVCTeRhTJJHdzho5BBg+To7y4j3hlMrg=
-=======
-			zztJEDwzUX9izNV0bP8CX727Ol7PkM3U5TJmIEH2fbI=
-			</data>
-		</dict>
-		<key>Modules/OBI4chatSDK.swiftmodule/x86_64.swiftmodule</key>
-		<dict>
-			<key>hash2</key>
-			<data>
-			N/K4elAAzYPIYs/gJAs6TArohmZZSSxDwOH2/QZArRU=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
@@ -573,22 +387,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			S7V8Yx7zn+orGg1wmMXNWxqgtxzQKH2AN4YaD7vBtBI=
-=======
-			MZZ19pLJbWjQGciKx+oOSYDC1ZBJwkJOg66rggoYJ0s=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>NavigationTitle.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD:OBI4ChatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			CTZ3CkQzQaeiPjd83KiPee5z8N3gcX931TsfE9ExiK0=
-=======
-			tJX/ZJ44tEY3uMPxfmZhJEN5PIFCZGOTCOD4X59OLM8=
->>>>>>> master:OBI4chatSDK.xcframework/ios-x86_64-simulator/OBI4ChatSDK.framework/_CodeSignature/CodeResources
 			</data>
 		</dict>
 		<key>OBI4ChatSDK.momd/OBI4ChatSDK.mom</key>
