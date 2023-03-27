@@ -1,0 +1,292 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.7 (swiftlang-5.7.0.127.4 clang-1400.0.29.50)
+// swift-module-flags: -target x86_64-apple-ios13.0-simulator -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name OBI4ChatSDK
+// swift-module-flags-ignorable: -enable-bare-slash-regex
+import AVKit
+import Alamofire
+import Combine
+import CoreData
+import Foundation
+import Lottie
+import MobileCoreServices
+@_exported import OBI4ChatSDK
+import Photos
+import PhotosUI
+import PusherSwift
+import Swift
+import UIKit
+import _Concurrency
+import _StringProcessing
+@objc public class OBIMessage : ObjectiveC.NSObject, Swift.Codable {
+  final public let content: Swift.String?
+  final public let type: Swift.String
+  final public let author: OBI4ChatSDK.OBIAuthor?
+  final public let attachment: OBI4ChatSDK.OBIAttachment?
+  public var date: Swift.String
+  public var choices: [OBI4ChatSDK.Choice]
+  public var link: Swift.String?
+  public init(content: Swift.String?, type: Swift.String, author: OBI4ChatSDK.OBIAuthor?, attachment: OBI4ChatSDK.OBIAttachment?, date: Swift.String, choices: [OBI4ChatSDK.Choice] = [])
+  required public init(from decoder: Swift.Decoder) throws
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+}
+public enum OBIMessageType : Swift.String, Swift.Codable {
+  case agent
+  case user
+  case typing
+  case waiting
+  case bot
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+@_inheritsConvenienceInitializers @objc public class ExternalChatConfigurationModel : ObjectiveC.NSObject {
+  public var saveChatHistory: Swift.Bool?
+  public var emailFormText: Swift.String?
+  public var emailFormKeys: [Swift.String]?
+  public var preChatFormText: Swift.String?
+  public var preChatFormKeys: [Swift.String]?
+  public var widgetDisplay: Swift.String?
+  public var unavailableHeader: Swift.String?
+  public var unavailableText: Swift.String?
+  public var canSendAttachment: Swift.Bool?
+  public var noAgentsAvailableText: Swift.String?
+  public var widgetText: Swift.String?
+  public var widgetTitle: Swift.String?
+  public var widgetSubtitle: Swift.String?
+  public var widgetWelcomeLine: Swift.String?
+  public var widgetLogoURI: Swift.String?
+  public var widgetColor: Swift.String?
+  public var widgetLanguage: Swift.String?
+  public var widgetPosition: Swift.String?
+  public var autoTriggerEnabled: Swift.Bool?
+  public var autoTriggerDelaySeconds: Swift.Int?
+  public var autoTriggerText: Swift.String?
+  public var autoTriggerCooldownTime: Swift.Int?
+  public var autoTriggerTriggerOnlyOnce: Swift.Bool?
+  public var showMessageTimestamp: Swift.Bool?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension Foundation.NSAttributedString {
+  public func trimWhiteSpace() -> Foundation.NSAttributedString
+}
+@objc public class ClientTyping : ObjectiveC.NSObject, Swift.Codable {
+  final public let typing: Swift.Bool
+  public init(typing: Swift.Bool)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public enum BotCommunicationStatus : Swift.String {
+  case noBotConfigured
+  case success
+  case failure
+  public init?(rawValue: Swift.String)
+  public typealias RawValue = Swift.String
+  public var rawValue: Swift.String {
+    get
+  }
+}
+public struct Choice : Swift.Codable {
+  public let buttonText: Swift.String
+  public let intent: Swift.String
+  public let entity: OBI4ChatSDK.Entity?
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case intent, entity
+    case buttonText
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public class OBIAttachment : ObjectiveC.NSObject, Swift.Codable {
+  final public let url: Swift.String
+  final public let type: Swift.String?
+  final public let name: Swift.String
+  public init(url: Swift.String, type: Swift.String?, name: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public struct Entity : Swift.Codable {
+  public let value: Swift.String
+  public let matchValue: Swift.Bool
+  public let saveReply: Swift.Bool
+  public let name: Swift.String
+  public enum CodingKeys : Swift.String, Swift.CodingKey {
+    case value, name
+    case matchValue
+    case saveReply
+    public init?(rawValue: Swift.String)
+    public init?(stringValue: Swift.String)
+    public init?(intValue: Swift.Int)
+    public typealias RawValue = Swift.String
+    public var intValue: Swift.Int? {
+      get
+    }
+    public var rawValue: Swift.String {
+      get
+    }
+    public var stringValue: Swift.String {
+      get
+    }
+  }
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc public class OBIAuthor : ObjectiveC.NSObject, Swift.Codable {
+  final public let url: Swift.String?
+  final public let name: Swift.String
+  public var guid: Swift.String?
+  public init(url: Swift.String, name: Swift.String, guid: Swift.String)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public enum HorizontalAlignment {
+  case left
+  case right
+  case leading
+  case trailing
+  case justified
+  public static func == (a: OBI4ChatSDK.HorizontalAlignment, b: OBI4ChatSDK.HorizontalAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+public enum VerticalAlignment {
+  case top
+  case center
+  case bottom
+  public static func == (a: OBI4ChatSDK.VerticalAlignment, b: OBI4ChatSDK.VerticalAlignment) -> Swift.Bool
+  public func hash(into hasher: inout Swift.Hasher)
+  public var hashValue: Swift.Int {
+    get
+  }
+}
+@objc @_Concurrency.MainActor(unsafe) open class AlignedCollectionViewFlowLayout : UIKit.UICollectionViewFlowLayout {
+  @_Concurrency.MainActor(unsafe) public var horizontalAlignment: OBI4ChatSDK.HorizontalAlignment
+  @_Concurrency.MainActor(unsafe) public var verticalAlignment: OBI4ChatSDK.VerticalAlignment
+  @_Concurrency.MainActor(unsafe) public init(horizontalAlignment: OBI4ChatSDK.HorizontalAlignment = .justified, verticalAlignment: OBI4ChatSDK.VerticalAlignment = .center)
+  @_Concurrency.MainActor(unsafe) @objc required dynamic public init?(coder aDecoder: Foundation.NSCoder)
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForItem(at indexPath: Foundation.IndexPath) -> UIKit.UICollectionViewLayoutAttributes?
+  @_Concurrency.MainActor(unsafe) @objc override dynamic open func layoutAttributesForElements(in rect: CoreFoundation.CGRect) -> [UIKit.UICollectionViewLayoutAttributes]?
+  @objc deinit
+}
+@objc public class OBI4Chat : ObjectiveC.NSObject {
+  @objc public init(appGuid: Swift.String, userGuid: Swift.String? = nil, userName: Swift.String? = nil, botId: Swift.String? = nil, enableLauncher: Swift.Bool, externalConfiguration: OBI4ChatSDK.ExternalChatConfigurationModel? = nil, externalStyle: OBI4ChatSDK.ExternalStyle? = nil)
+  @objc public func isChatAvailable(_ completion: @escaping (OBI4ChatSDK.ChatAvailability) -> Swift.Void)
+  @objc public func openChat(in viewController: UIKit.UIViewController? = nil)
+  @objc public func startBotSessionIfNeeded()
+  @objc public func getCurrentUserGuid() -> Swift.String
+  @objc public func getCurrentBotId() -> Swift.String
+  @objc public func deleteChatHistory()
+  @objc public func restartChat(userGuid: Swift.String? = nil, botId: Swift.String? = nil)
+  @objc public func closeChatSession()
+  public func sendMessage(message: OBI4ChatSDK.OBIMessage, shouldSave: Swift.Bool, choice: OBI4ChatSDK.Choice? = nil, isQuickReply: Swift.Bool, botMessageCompletionHandler: ((OBI4ChatSDK.BotCommunicationStatus) -> Swift.Void)? = nil)
+  @objc public func sendTyping(typing: OBI4ChatSDK.ClientTyping)
+  @objc deinit
+}
+@objc public protocol OBI4ChatObserver {
+  @objc func obi4Chat(_ chat: OBI4ChatSDK.OBI4Chat, didReceiveNewMessage message: OBI4ChatSDK.OBIMessage)
+  @objc func obi4Chat(_ chat: OBI4ChatSDK.OBI4Chat, didReceiveTyping typing: OBI4ChatSDK.ClientTyping)
+  @objc func obi4ChatInited(_ chat: OBI4ChatSDK.OBI4Chat)
+  @objc func obi4ChatPreformSubmitted(_ chat: OBI4ChatSDK.OBI4Chat)
+}
+@objc extension OBI4ChatSDK.OBI4Chat {
+  @objc dynamic public func addObserver(_ observer: OBI4ChatSDK.OBI4ChatObserver)
+  @objc dynamic public func removeObserver(_ observer: OBI4ChatSDK.OBI4ChatObserver)
+}
+@objc public class ChatAvailability : ObjectiveC.NSObject, Swift.Codable {
+  final public let available: Swift.Bool
+  public init(available: Swift.Bool)
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+precedencegroup NullabilityPrecedence {
+  associativity: right
+  higherThan: AssignmentPrecedence
+}
+infix operator ?= : NullabilityPrecedence
+extension Foundation.URLRequest {
+  public var curlString: Swift.String {
+    get
+  }
+}
+@objc @_inheritsConvenienceInitializers public class AlertUtil : ObjectiveC.NSObject {
+  public static func showAlert(title: Swift.String, message: Swift.String? = nil)
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class ExternalStyle : ObjectiveC.NSObject {
+  public var incomingBalloon: OBI4ChatSDK.BalloonStyle?
+  public var outgoingBalloon: OBI4ChatSDK.BalloonStyle?
+  public var timestamp: OBI4ChatSDK.FontStyle?
+  public var sendButton: OBI4ChatSDK.FontStyle?
+  public var sendButtonText: Swift.String?
+  public var startButtonText: Swift.String?
+  public var inputTextField: OBI4ChatSDK.FontStyle?
+  public var inputTextFieldPlaceholder: Swift.String?
+  public var headerTitle: OBI4ChatSDK.FontStyle?
+  public var headerSubtitle: OBI4ChatSDK.FontStyle?
+  public var headerTextColor: UIKit.UIColor?
+  public var formSentTitle: Swift.String?
+  public var formSentSubtitle: Swift.String?
+  public var backgroundColor: UIKit.UIColor?
+  public var buttonBorderColor: UIKit.UIColor?
+  public var buttonFillColor: UIKit.UIColor?
+  public var buttonColorNormal: UIKit.UIColor?
+  public var buttonColorDisabled: UIKit.UIColor?
+  public var buttonTextColor: UIKit.UIColor?
+  public var buttonFontSize: CoreFoundation.CGFloat?
+  public var buttonFontWeight: CoreFoundation.CGFloat?
+  public var buttonFont: Swift.String?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class BalloonStyle : ObjectiveC.NSObject {
+  public var fontStyle: OBI4ChatSDK.FontStyle?
+  public var textColor: UIKit.UIColor?
+  public var backgroundColor: UIKit.UIColor?
+  @objc override dynamic public init()
+  @objc deinit
+}
+@_inheritsConvenienceInitializers @objc public class FontStyle : ObjectiveC.NSObject {
+  public var name: Swift.String?
+  public var size: CoreFoundation.CGFloat?
+  @objc override dynamic public init()
+  @objc deinit
+}
+extension OBI4ChatSDK.OBIMessageType : Swift.Equatable {}
+extension OBI4ChatSDK.OBIMessageType : Swift.Hashable {}
+extension OBI4ChatSDK.OBIMessageType : Swift.RawRepresentable {}
+extension OBI4ChatSDK.BotCommunicationStatus : Swift.Equatable {}
+extension OBI4ChatSDK.BotCommunicationStatus : Swift.Hashable {}
+extension OBI4ChatSDK.BotCommunicationStatus : Swift.RawRepresentable {}
+extension OBI4ChatSDK.Choice.CodingKeys : Swift.Equatable {}
+extension OBI4ChatSDK.Choice.CodingKeys : Swift.Hashable {}
+extension OBI4ChatSDK.Choice.CodingKeys : Swift.RawRepresentable {}
+extension OBI4ChatSDK.Entity.CodingKeys : Swift.Equatable {}
+extension OBI4ChatSDK.Entity.CodingKeys : Swift.Hashable {}
+extension OBI4ChatSDK.Entity.CodingKeys : Swift.RawRepresentable {}
+extension OBI4ChatSDK.HorizontalAlignment : Swift.Equatable {}
+extension OBI4ChatSDK.HorizontalAlignment : Swift.Hashable {}
+extension OBI4ChatSDK.VerticalAlignment : Swift.Equatable {}
+extension OBI4ChatSDK.VerticalAlignment : Swift.Hashable {}
