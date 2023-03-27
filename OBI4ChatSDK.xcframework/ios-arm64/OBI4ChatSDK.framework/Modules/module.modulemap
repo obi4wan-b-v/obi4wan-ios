@@ -6,6 +6,6 @@ framework module OBI4ChatSDK {
 }
 
 module OBI4ChatSDK.Swift {
-    header "OBI4ChatSDK-Swift.h"
-    requires objc
+  header "OBI4ChatSDK-Swift.h"
+  requires objc
 }

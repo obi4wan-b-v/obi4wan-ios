@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name          = "OBI4ChatSDK"
-  s.version       = "4.0.0"
+  s.version       = "4.0.1"
   s.summary       = "OBI4ChatSDK for chat"
 
   s.homepage      = "https://www.obi4wan.com/nl/"
