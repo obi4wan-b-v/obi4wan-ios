@@ -8408,14 +8408,22 @@
             "children": [
               {
                 "kind": "TypeNominal",
-                "name": "String",
-                "printedName": "Swift.String",
-                "usr": "s:SS"
+                "name": "Optional",
+                "printedName": "Swift.String?",
+                "children": [
+                  {
+                    "kind": "TypeNominal",
+                    "name": "String",
+                    "printedName": "Swift.String",
+                    "usr": "s:SS"
+                  }
+                ],
+                "usr": "s:Sq"
               }
             ],
             "declKind": "Func",
             "usr": "c:@M@OBI4ChatSDK@objc(cs)OBI4Chat(im)getCurrentBotId",
-            "mangledName": "$s11OBI4ChatSDK0aB0C15getCurrentBotIdSSyF",
+            "mangledName": "$s11OBI4ChatSDK0aB0C15getCurrentBotIdSSSgyF",
             "moduleName": "OBI4ChatSDK",
             "declAttributes": [
               "AccessControl",
