@@ -6,10 +6,10 @@
 OBI4wan chat SDK for iOS supports iOS 13.
 
 ### CocoaPods
-Add the OBI4ChatSDK pod into your Podfile and run `pod install`.
+Add the pod into your Podfile and run `pod install`.
 ```ruby
     target :YourTargetName do
-      pod 'OBI4ChatSDK'
+      pod 'OBI4chatSDK'
     end
 
      post_install do |installer|
@@ -23,7 +23,7 @@ Add the OBI4ChatSDK pod into your Podfile and run `pod install`.
 
 ## Update Info.plist
 
-When installing OBI4ChatSDK, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription`, `NSCameraUsageDescription` entry in your `Info.plist`.
+When installing OBI4chatSDK, you'll need to make sure that you have a `NSPhotoLibraryUsageDescription`, `NSCameraUsageDescription` entry in your `Info.plist`.
 
 This is [required by Apple](https://developer.apple.com/library/content/qa/qa1937/_index.html) for all apps that access the photo library and camera. It is necessary when installing OBI4ChatSDK due to the image upload functionality. Users will be prompted for the photo library permission only when they tap the gallery upload button and for the camera permission only when they tap the camera upload button.
 
